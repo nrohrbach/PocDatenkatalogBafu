@@ -120,94 +120,142 @@ dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index
 #--------------------------------------------------------------------------
 st.title("BAFU Datenkatalog")
 
-# Suchfeld
-search_query = st.text_input("Suche nach Titel oder Beschreibung")
+# Search field
+search_query = st.text_input("Suche nach Titel oder Beschreibung:")
 
-# Filter Dropdowns
-selected_thema = st.selectbox("Filter nach Thema", ["Alle"] + Thema)
-selected_typ = st.selectbox("Filter nach Typ", ["Alle"] + Datentyp)
+# Filters
+st.sidebar.header("Filter")
+selected_keyword = st.sidebar.selectbox("Keyword", ['Alle'] + Thema)
+selected_type = st.sidebar.selectbox("Typ", ['Alle'] + Datentyp)
 
-# --- Filterlogik ---
+# Apply filters
 filtered_df = dfCombined.copy()
 
-# Suche nach Text
+if selected_keyword != 'Alle':
+    mapped_keyword = map_options(selected_keyword)
+    if mapped_keyword:
+        # Filter rows where the mapped_keyword is in the list of keywords
+        filtered_df = filtered_df[filtered_df['keywords'].apply(lambda x: mapped_keyword in x if isinstance(x, list) else False)]
+    else:
+        # If the keyword doesn't have a mapping, it won't match anything from opendata.swiss.
+        # We might need to consider how keywords in the Excel file are handled if they don't map.
+        # For now, this will likely filter out items from opendata.swiss without a matching keyword.
+        pass # Add logic if needed for handling unmapped keywords from Excel
+
+if selected_type != 'Alle':
+    filtered_df = filtered_df[filtered_df['Typ'] == selected_type]
+
+# Apply search query
 if search_query:
     filtered_df = filtered_df[
-        filtered_df.apply(
-            lambda row: (
-                search_query.lower() in str(row['title']).lower() or
-                search_query.lower() in str(row['description']).lower()
-            ),
-            axis=1
-        )
+        filtered_df['title'].str.contains(search_query, case=False, na=False) |
+        filtered_df['description'].str.contains(search_query, case=False, na=False)
     ]
 
-# Filter nach Thema
-if selected_thema != "Alle":
-    # Wenden Sie die map_options Funktion hier an, um das opendata.swiss Keyword zu erhalten
-    mapped_thema = map_options(selected_thema)
-    if mapped_thema:
-        # Filtern Sie, wenn das gemappte Keyword in der 'keywords' Liste vorhanden ist
-        filtered_df = filtered_df[
-            filtered_df['keywords'].apply(
-                lambda keywords_list: mapped_thema in keywords_list if isinstance(keywords_list, list) else False
-            )
-        ]
+# Display results
+if not filtered_df.empty:
+    st.subheader("Ergebnisse:")
 
+    # Define color mapping for Type (customize as needed)
+    type_colors = {
+        'Daten': '#1f77b4',        # blue
+        'Indikator': '#ff7f0e',    # orange
+        'Statistik': '#2ca02c',    # green
+        'Geodaten': '#d62728',     # red
+        'Geodatenmodell': '#9467bd', # purple
+        'Monitoring': '#8c564b'     # brown
+    }
 
-# Filter nach Typ
-if selected_typ != "Alle":
-    filtered_df = filtered_df[filtered_df['Typ'] == selected_typ]
+    # Define color mapping for Keywords (customize as needed, perhaps using a simple hash or cycle)
+    # For simplicity, let's use a fixed set of colors and cycle through them
+    keyword_color_palette = ['#aec7e8', '#ffbb78', '#98df8a', '#ff9896', '#c5b0d5', '#c49c94', '#f7b6d2', '#c7c7c7', '#dbdb8d', '#9edae5']
+    keyword_color_map = {}
+    for i, keyword in enumerate(Thema):
+        keyword_color_map[map_options(keyword)] = keyword_color_palette[i % len(keyword_color_palette)]
 
-# --- Anzeige der Ergebnisse ---
-
-st.subheader(f"Resultate ({len(filtered_df)} gefunden)")
-
-if filtered_df.empty:
-    st.info("Keine Ergebnisse gefunden.")
-else:
-    # Farben für die Buttons (Beispielhafte Farben, können angepasst werden)
-    thema_colors = {thema: f"#{abs(hash(thema)) % (2**24):06x}" for thema in Thema}
-    typ_colors = {typ: f"#{abs(hash(typ) * 2) % (2**24):06x}" for typ in Datentyp}
 
     for index, row in filtered_df.iterrows():
-        # Erstelle einen eindeutigen Schlüssel für das Expander-Widget
-        expander_key = f"expander_{row['title']}_{index}"
+        with st.expander(row['title']):
+            # Display Title (already in the expander title)
+            st.write(f"**Titel:** {row['title']}")
 
-        with st.expander(row['title'], expanded=False):
-            # Thema Button
-            thema_value = row['keywords']
-            # Finden Sie den BAFU-Themennamen basierend auf dem opendata.swiss Keyword
-            bafu_thema_name = None
-            if isinstance(thema_value, list) and thema_value:
-                 # Versuchen Sie, das erste Keyword in ein BAFU Thema zurückzusetzen
-                 for key, val in map_options.mapping.items(): # Greifen Sie auf die interne Mapping-Variable zu
-                     if val == thema_value[0]:
-                         bafu_thema_name = key
-                         break
-
-            if bafu_thema_name:
-                 st.markdown(
-                     f'<button style="background-color: {thema_colors.get(bafu_thema_name, "#cccccc")}; color: white; border: none; padding: 5px 10px; margin: 2px; border-radius: 4px;">{bafu_thema_name}</button>',
-                     unsafe_allow_html=True
-                 )
-
-            # Typ Button
-            typ_value = row['Typ']
+            # Display Type as a colored button/badge
+            item_type = row['Typ'] if pd.notna(row['Typ']) else 'Unbekannt'
+            type_color = type_colors.get(item_type, '#7f7f7f') # Default to grey if type not in map
             st.markdown(
-                f'<button style="background-color: {typ_colors.get(typ_value, "#cccccc")}; color: white; border: none; padding: 5px 10px; margin: 2px; border-radius: 4px;">{typ_value}</button>',
+                f"""
+                <span style='
+                    display: inline-block;
+                    padding: 5px 10px;
+                    margin-right: 5px;
+                    border-radius: 15px;
+                    background-color: {type_color};
+                    color: white;
+                    font-weight: bold;
+                    font-size: 0.9em;
+                '>
+                    {item_type}
+                </span>
+                """,
                 unsafe_allow_html=True
             )
 
-            st.write(f"**Beschreibung:** {row['description']}")
-            st.write(f"**Zuletzt geändert:** {row['modified']}")
-            # Hier können Sie weitere Details anzeigen, z.B. Links zu den Daten
+            # Display Keywords as colored buttons/badges
+            keywords_list = row['keywords'] if isinstance(row['keywords'], list) else []
+            if keywords_list:
+                for keyword in keywords_list:
+                    original_keyword = next((k for k, v in map_options('').items() if v == keyword), keyword) # Try to map back to original theme name
+                    keyword_color = keyword_color_map.get(keyword, '#d62728') # Default to red if mapped keyword not in color map
+                    st.markdown(
+                        f"""
+                        <span style='
+                            display: inline-block;
+                            padding: 5px 10px;
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                            border-radius: 15px;
+                            background-color: {keyword_color};
+                            color: white;
+                            font-weight: bold;
+                            font-size: 0.9em;
+                        '>
+                            {original_keyword}
+                        </span>
+                        """,
+                        unsafe_allow_html=True
+                    )
 
+            # Display Description and Modified Date
+            st.write(f"**Beschreibung:** {row['description'] if pd.notna(row['description']) else 'Keine Beschreibung vorhanden'}")
+            st.write(f"**Zuletzt geändert:** {row['modified'] if pd.notna(row['modified']) else 'Datum unbekannt'}")
 
-# --- Ausführen der App ---
-# Speichern Sie diesen Code als eine .py Datei, z.B. app.py
-# In Google Colab können Sie Streamlit Apps wie folgt ausführen:
-# !streamlit run app.py & npx localtunnel --port 8501
-# Führen Sie diesen Befehl in einer Zelle aus, nachdem Sie den Code als Datei gespeichert haben.
-# Der Link zum Öffnen der App wird im Output von localtunnel angezeigt.
+else:
+    st.info("Keine Ergebnisse gefunden.")
+
+# --- How to run in Colab ---
+# To run this Streamlit app in Google Colab, you need to use a tool like ngrok
+# because Streamlit runs a local web server.
+
+# 1. Install ngrok:
+# !pip install pyngrok
+
+# 2. Import and authenticate (optional, but good practice for persistent tunnels):
+# from pyngrok import ngrok
+# ngrok.set_auth_token("YOUR_NGROK_AUTHTOKEN") # Get your token from ngrok.com
+
+# 3. Save the code above as a Python file (e.g., app.py) in your Colab environment.
+#    You can do this by clicking File > New > Python 3 notebook, then saving the cell
+#    content as a file.
+
+# 4. Run the Streamlit app using !streamlit run:
+# !streamlit run app.py &>/dev/null&
+
+# 5. Start ngrok to expose the Streamlit port (default is 8501):
+# public_url = ngrok.connect(port='8501')
+# public_url
+
+# This will print a public URL that you can click to access your Streamlit app.
+# The `&>/dev/null&` sends the Streamlit output to null and runs it in the background
+# so your Colab notebook doesn't get blocked. You can monitor the Streamlit process
+# with `!pgrep streamlit`. To stop it, use `!pkill streamlit`.
 
