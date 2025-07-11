@@ -118,46 +118,96 @@ dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
-# Streamlit App
 st.title("BAFU Datenkatalog")
 
-# Search bar
+# Suchfeld
 search_query = st.text_input("Suche nach Titel oder Beschreibung")
 
-# Filters
-selected_thema = st.selectbox("Filter nach Keyword:", ["Alle"] + Thema)
-selected_typ = st.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
+# Filter Dropdowns
+selected_thema = st.selectbox("Filter nach Thema", ["Alle"] + Thema)
+selected_typ = st.selectbox("Filter nach Typ", ["Alle"] + Datentyp)
 
-# Apply filters
+# --- Filterlogik ---
 filtered_df = dfCombined.copy()
 
+# Suche nach Text
 if search_query:
     filtered_df = filtered_df[
-        filtered_df['title'].str.contains(search_query, case=False, na=False) |
-        filtered_df['description'].str.contains(search_query, case=False, na=False)
+        filtered_df.apply(
+            lambda row: (
+                search_query.lower() in str(row['title']).lower() or
+                search_query.lower() in str(row['description']).lower()
+            ),
+            axis=1
+        )
     ]
 
+# Filter nach Thema
 if selected_thema != "Alle":
-    filtered_df = filtered_df[
-        filtered_df['keywords'].apply(lambda x: any(map_options(selected_thema) in kw for kw in x) if isinstance(x, list) else False)
-    ]
+    # Wenden Sie die map_options Funktion hier an, um das opendata.swiss Keyword zu erhalten
+    mapped_thema = map_options(selected_thema)
+    if mapped_thema:
+        # Filtern Sie, wenn das gemappte Keyword in der 'keywords' Liste vorhanden ist
+        filtered_df = filtered_df[
+            filtered_df['keywords'].apply(
+                lambda keywords_list: mapped_thema in keywords_list if isinstance(keywords_list, list) else False
+            )
+        ]
 
 
+# Filter nach Typ
 if selected_typ != "Alle":
     filtered_df = filtered_df[filtered_df['Typ'] == selected_typ]
 
-# Display results
-st.subheader(f"Gefundene Einträge: {len(filtered_df)}")
+# --- Anzeige der Ergebnisse ---
 
-if not filtered_df.empty:
-    for index, row in filtered_df.iterrows():
-        with st.expander(f"**{row['title']}**"):
-            st.write(f"**Typ:** {row['Typ']}")
-            st.write(f"**Beschreibung:** {row['description']}")
-            if 'modified' in row and pd.notnull(row['modified']):
-                st.write(f"**Zuletzt geändert:** {row['modified']}")
-            if 'url' in row and pd.notnull(row['url']):
-                 st.write(f"**Link:** [{row['url']}]({row['url']})")
+st.subheader(f"Resultate ({len(filtered_df)} gefunden)")
 
+if filtered_df.empty:
+    st.info("Keine Ergebnisse gefunden.")
 else:
-    st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
+    # Farben für die Buttons (Beispielhafte Farben, können angepasst werden)
+    thema_colors = {thema: f"#{abs(hash(thema)) % (2**24):06x}" for thema in Thema}
+    typ_colors = {typ: f"#{abs(hash(typ) * 2) % (2**24):06x}" for typ in Datentyp}
+
+    for index, row in filtered_df.iterrows():
+        # Erstelle einen eindeutigen Schlüssel für das Expander-Widget
+        expander_key = f"expander_{row['title']}_{index}"
+
+        with st.expander(row['title'], expanded=False):
+            # Thema Button
+            thema_value = row['keywords']
+            # Finden Sie den BAFU-Themennamen basierend auf dem opendata.swiss Keyword
+            bafu_thema_name = None
+            if isinstance(thema_value, list) and thema_value:
+                 # Versuchen Sie, das erste Keyword in ein BAFU Thema zurückzusetzen
+                 for key, val in map_options.mapping.items(): # Greifen Sie auf die interne Mapping-Variable zu
+                     if val == thema_value[0]:
+                         bafu_thema_name = key
+                         break
+
+            if bafu_thema_name:
+                 st.markdown(
+                     f'<button style="background-color: {thema_colors.get(bafu_thema_name, "#cccccc")}; color: white; border: none; padding: 5px 10px; margin: 2px; border-radius: 4px;">{bafu_thema_name}</button>',
+                     unsafe_allow_html=True
+                 )
+
+            # Typ Button
+            typ_value = row['Typ']
+            st.markdown(
+                f'<button style="background-color: {typ_colors.get(typ_value, "#cccccc")}; color: white; border: none; padding: 5px 10px; margin: 2px; border-radius: 4px;">{typ_value}</button>',
+                unsafe_allow_html=True
+            )
+
+            st.write(f"**Beschreibung:** {row['description']}")
+            st.write(f"**Zuletzt geändert:** {row['modified']}")
+            # Hier können Sie weitere Details anzeigen, z.B. Links zu den Daten
+
+
+# --- Ausführen der App ---
+# Speichern Sie diesen Code als eine .py Datei, z.B. app.py
+# In Google Colab können Sie Streamlit Apps wie folgt ausführen:
+# !streamlit run app.py & npx localtunnel --port 8501
+# Führen Sie diesen Befehl in einer Zelle aus, nachdem Sie den Code als Datei gespeichert haben.
+# Der Link zum Öffnen der App wird im Output von localtunnel angezeigt.
+
