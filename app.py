@@ -106,7 +106,7 @@ dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
 )
 
 # Statistiken und Indikatoren lesen
-urlexcel = 'https://github.com/nrohrbach/PocDatenkatalogBafu/raw/main/StatistikenIndikatoren.xlsx'
+urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
 dfStatistikenIndikatoren = pd.read_excel(urlexcel)
 
 # Mapping auf Keywords
