@@ -118,47 +118,40 @@ dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
-st.title("BAFU Datenkatalog")
+st.title('BAFU Datenkatalog')
 
-# Search field
-search_term = st.text_input("Suchen nach Titel oder Beschreibung")
+# Search input
+search_term = st.text_input("Suche nach Stichwort:")
 
 # Filter dropdowns
-keyword_options = sorted(list(set([item for sublist in dfCombined['keywords'].dropna() for item in sublist])))
-selected_keyword = st.selectbox("Filtern nach Keyword", ["Alle"] + keyword_options)
-
-type_options = sorted(dfCombined['Typ'].dropna().unique().tolist())
-selected_type = st.selectbox("Filtern nach Typ", ["Alle"] + type_options)
-
+selected_keyword = st.selectbox("Filter nach Thema:", ['Alle'] + Thema)
+selected_type = st.selectbox("Filter nach Typ:", ['Alle'] + Datentyp)
 
 # Apply filters
 filtered_df = dfCombined.copy()
 
-if search_term:
-    filtered_df = filtered_df[
-        filtered_df.apply(
-            lambda row: (search_term.lower() in str(row['title']).lower() if pd.notnull(row['title']) else False) or
-                        (search_term.lower() in str(row['description']).lower() if pd.notnull(row['description']) else False),
-            axis=1
-        )
-    ]
+if selected_keyword != 'Alle':
+    # Filter by keyword (check if the keyword is in the list of keywords)
+    filtered_df = filtered_df[filtered_df['keywords'].apply(lambda x: selected_keyword.lower() in [k.lower() for k in x] if isinstance(x, list) else False)]
 
-if selected_keyword != "Alle":
-    filtered_df = filtered_df[filtered_df['keywords'].apply(lambda x: selected_keyword in x if isinstance(x, list) else False)]
-
-if selected_type != "Alle":
+if selected_type != 'Alle':
     filtered_df = filtered_df[filtered_df['Typ'] == selected_type]
 
+# Apply search term filter
+if search_term:
+    filtered_df = filtered_df[
+        filtered_df.apply(lambda row: search_term.lower() in str(row.values).lower(), axis=1)
+    ]
+
 # Display results
-if not filtered_df.empty:
-           st.subheader("Resultate:")
-           if not filtered_df.empty:
-               for index, row in filtered_df.iterrows():
-                   with st.expander(f"**{row['title']}**"):
-                       st.write(f"**Typ:** {row['Typ']}")
-                       if pd.notnull(row['description']):
-                           st.write(f"**Beschreibung:** {row['description']}")
-                       if pd.notnull(row['keywords']) and isinstance(row['keywords'], list):
-                            st.write(f"**Keywords:** {', '.join(row['keywords'])}")
-           else:
-               st.info("Keine Ergebnisse gefunden.")
+st.subheader("Suchergebnisse:")
+
+if filtered_df.empty:
+    st.write("Keine Ergebnisse gefunden.")
+else:
+    for index, row in filtered_df.iterrows():
+        st.write(f"**Titel:** {row['title']}")
+        st.write(f"**Beschreibung:** {row['description']}")
+        st.write(f"**Typ:** {row['Typ']}")
+        st.write(f"**Keywords:** {', '.join(row['keywords']) if isinstance(row['keywords'], list) else row['keywords']}")
+        st.write("---") # Separator for readability
