@@ -106,7 +106,8 @@ dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
 )
 
 # Statistiken und Indikatoren lesen
-dfStatistikenIndikatoren = pd.read_excel("StatistikenIndikatoren.xlsx")
+urlexcel = 'https://github.com/nrohrbach/PocDatenkatalogBafu/raw/main/StatistikenIndikatoren.xlsx'
+dfStatistikenIndikatoren = pd.read_excel(urlexcel)
 
 # Mapping auf Keywords
 dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
