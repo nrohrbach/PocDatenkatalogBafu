@@ -118,123 +118,50 @@ dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
+# Streamlit App
 st.title("BAFU Datenkatalog")
 
-# Search field
-search_query = st.text_input("Suche nach Titel oder Beschreibung:")
+# Search bar
+search_query = st.text_input("Suche nach Titel oder Beschreibung")
 
 # Filters
-st.sidebar.header("Filter")
-selected_keyword = st.sidebar.selectbox("Keyword", ['Alle'] + Thema)
-selected_type = st.sidebar.selectbox("Typ", ['Alle'] + Datentyp)
+selected_thema = st.selectbox("Filter nach Keyword:", ["Alle"] + Thema)
+selected_typ = st.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
 
 # Apply filters
 filtered_df = dfCombined.copy()
 
-if selected_keyword != 'Alle':
-    mapped_keyword = map_options(selected_keyword)
-    if mapped_keyword:
-        # Filter rows where the mapped_keyword is in the list of keywords
-        filtered_df = filtered_df[filtered_df['keywords'].apply(lambda x: mapped_keyword in x if isinstance(x, list) else False)]
-    else:
-        # If the keyword doesn't have a mapping, it won't match anything from opendata.swiss.
-        # We might need to consider how keywords in the Excel file are handled if they don't map.
-        # For now, this will likely filter out items from opendata.swiss without a matching keyword.
-        pass # Add logic if needed for handling unmapped keywords from Excel
-
-if selected_type != 'Alle':
-    filtered_df = filtered_df[filtered_df['Typ'] == selected_type]
-
-# Apply search query
 if search_query:
     filtered_df = filtered_df[
         filtered_df['title'].str.contains(search_query, case=False, na=False) |
         filtered_df['description'].str.contains(search_query, case=False, na=False)
     ]
 
+if selected_thema != "Alle":
+    filtered_df = filtered_df[
+        filtered_df['keywords'].apply(lambda x: any(map_options(selected_thema) in kw for kw in x) if isinstance(x, list) else False)
+    ]
+
+
+if selected_typ != "Alle":
+    filtered_df = filtered_df[filtered_df['Typ'] == selected_typ]
+
 # Display results
+st.subheader(f"Gefundene Einträge: {len(filtered_df)}")
+
 if not filtered_df.empty:
-    st.subheader("Ergebnisse:")
-
-    # Define color mapping for Type (customize as needed)
-    type_colors = {
-        'Daten': '#1f77b4',        # blue
-        'Indikator': '#ff7f0e',    # orange
-        'Statistik': '#2ca02c',    # green
-        'Geodaten': '#d62728',     # red
-        'Geodatenmodell': '#9467bd', # purple
-        'Monitoring': '#8c564b'     # brown
-    }
-
-    # Define color mapping for Keywords (customize as needed, perhaps using a simple hash or cycle)
-    # For simplicity, let's use a fixed set of colors and cycle through them
-    keyword_color_palette = ['#aec7e8', '#ffbb78', '#98df8a', '#ff9896', '#c5b0d5', '#c49c94', '#f7b6d2', '#c7c7c7', '#dbdb8d', '#9edae5']
-    keyword_color_map = {}
-    for i, keyword in enumerate(Thema):
-        keyword_color_map[map_options(keyword)] = keyword_color_palette[i % len(keyword_color_palette)]
-
-
     for index, row in filtered_df.iterrows():
-        with st.expander(row['title']):
-            # Display Title (already in the expander title)
-            st.write(f"**Titel:** {row['title']}")
-
-            # Display Type as a colored button/badge
-            item_type = row['Typ'] if pd.notna(row['Typ']) else 'Unbekannt'
-            type_color = type_colors.get(item_type, '#7f7f7f') # Default to grey if type not in map
-            st.markdown(
-                f"""
-                <span style='
-                    display: inline-block;
-                    padding: 5px 10px;
-                    margin-right: 5px;
-                    border-radius: 15px;
-                    background-color: {type_color};
-                    color: white;
-                    font-weight: bold;
-                    font-size: 0.9em;
-                '>
-                    {item_type}
-                </span>
-                """,
-                unsafe_allow_html=True
-            )
-
-            # Display Keywords as colored buttons/badges
-            keywords_list = row['keywords'] if isinstance(row['keywords'], list) else []
-            if keywords_list:
-                for keyword in keywords_list:
-                    original_keyword = next((k for k, v in map_options('').items() if v == keyword), keyword) # Try to map back to original theme name
-                    keyword_color = keyword_color_map.get(keyword, '#d62728') # Default to red if mapped keyword not in color map
-                    st.markdown(
-                        f"""
-                        <span style='
-                            display: inline-block;
-                            padding: 5px 10px;
-                            margin-right: 5px;
-                            margin-bottom: 5px;
-                            border-radius: 15px;
-                            background-color: {keyword_color};
-                            color: white;
-                            font-weight: bold;
-                            font-size: 0.9em;
-                        '>
-                            {original_keyword}
-                        </span>
-                        """,
-                        unsafe_allow_html=True
-                    )
-
-            # Display Description and Modified Date
-            st.write(f"**Beschreibung:** {row['description'] if pd.notna(row['description']) else 'Keine Beschreibung vorhanden'}")
-            st.write(f"**Zuletzt geändert:** {row['modified'] if pd.notna(row['modified']) else 'Datum unbekannt'}")
+        with st.expander(f"**{row['title']}**"):
+            st.write(f"**Typ:** {row['Typ']}")
+            st.write(f"**Beschreibung:** {row['description']}")
+            if 'modified' in row and pd.notnull(row['modified']):
+                st.write(f"**Zuletzt geändert:** {row['modified']}")
+            if 'url' in row and pd.notnull(row['url']):
+                 st.write(f"**Link:** [{row['url']}]({row['url']})")
 
 else:
-    st.info("Keine Ergebnisse gefunden.")
+    st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
 
-# --- How to run in Colab ---
-# To run this Streamlit app in Google Colab, you need to use a tool like ngrok
-# because Streamlit runs a local web server.
 
 # 1. Install ngrok:
 # !pip install pyngrok
