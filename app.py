@@ -119,3 +119,46 @@ dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index
 # Streamlit App
 #--------------------------------------------------------------------------
 st.title("BAFU Datenkatalog")
+
+# Search field
+search_term = st.text_input("Suchen nach Titel oder Beschreibung")
+
+# Filter dropdowns
+keyword_options = sorted(list(set([item for sublist in dfCombined['keywords'].dropna() for item in sublist])))
+selected_keyword = st.selectbox("Filtern nach Keyword", ["Alle"] + keyword_options)
+
+type_options = sorted(dfCombined['Typ'].dropna().unique().tolist())
+selected_type = st.selectbox("Filtern nach Typ", ["Alle"] + type_options)
+
+
+# Apply filters
+filtered_df = dfCombined.copy()
+
+if search_term:
+    filtered_df = filtered_df[
+        filtered_df.apply(
+            lambda row: (search_term.lower() in str(row['title']).lower() if pd.notnull(row['title']) else False) or
+                        (search_term.lower() in str(row['description']).lower() if pd.notnull(row['description']) else False),
+            axis=1
+        )
+    ]
+
+if selected_keyword != "Alle":
+    filtered_df = filtered_df[filtered_df['keywords'].apply(lambda x: selected_keyword in x if isinstance(x, list) else False)]
+
+if selected_type != "Alle":
+    filtered_df = filtered_df[filtered_df['Typ'] == selected_type]
+
+# Display results
+if not filtered_df.empty:
+    st.subheader("Resultate:")
+    for index, row in filtered_df.iterrows():
+        st.write(f"**Titel:** {row['title']}")
+        st.write(f"**Typ:** {row['Typ']}")
+        if pd.notnull(row['description']):
+            st.write(f"**Beschreibung:** {row['description']}")
+        if pd.notnull(row['keywords']) and isinstance(row['keywords'], list):
+             st.write(f"**Keywords:** {', '.join(row['keywords'])}")
+        st.write("---")
+else:
+    st.info("Keine Ergebnisse gefunden.")
