@@ -151,14 +151,14 @@ if selected_type != "Alle":
 
 # Display results
 if not filtered_df.empty:
-    st.subheader("Resultate:")
-    for index, row in filtered_df.iterrows():
-        st.write(f"**Titel:** {row['title']}")
-        st.write(f"**Typ:** {row['Typ']}")
-        if pd.notnull(row['description']):
-            st.write(f"**Beschreibung:** {row['description']}")
-        if pd.notnull(row['keywords']) and isinstance(row['keywords'], list):
-             st.write(f"**Keywords:** {', '.join(row['keywords'])}")
-        st.write("---")
-else:
-    st.info("Keine Ergebnisse gefunden.")
+           st.subheader("Resultate:")
+           if not filtered_df.empty:
+               for index, row in filtered_df.iterrows():
+                   with st.expander(f"**{row['title']}**"):
+                       st.write(f"**Typ:** {row['Typ']}")
+                       if pd.notnull(row['description']):
+                           st.write(f"**Beschreibung:** {row['description']}")
+                       if pd.notnull(row['keywords']) and isinstance(row['keywords'], list):
+                            st.write(f"**Keywords:** {', '.join(row['keywords'])}")
+           else:
+               st.info("Keine Ergebnisse gefunden.")
