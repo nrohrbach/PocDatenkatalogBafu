@@ -144,14 +144,16 @@ if search_term:
     ]
 
 # Display results
-st.subheader("Suchergebnisse:")
+if not filtered_df.empty:
+           st.subheader("Resultate:")
+           if not filtered_df.empty:
+               for index, row in filtered_df.iterrows():
+                   with st.expander(f"**{row['title']}**"):
+                       st.write(f"**Typ:** {row['Typ']}")
+                       if pd.notnull(row['description']):
+                           st.write(f"**Beschreibung:** {row['description']}")
+                       if pd.notnull(row['keywords']) and isinstance(row['keywords'], list):
+                            st.write(f"**Keywords:** {', '.join(row['keywords'])}")
+           else:
+               st.info("Keine Ergebnisse gefunden.")
 
-if filtered_df.empty:
-    st.write("Keine Ergebnisse gefunden.")
-else:
-    for index, row in filtered_df.iterrows():
-        st.write(f"**Titel:** {row['title']}")
-        st.write(f"**Beschreibung:** {row['description']}")
-        st.write(f"**Typ:** {row['Typ']}")
-        st.write(f"**Keywords:** {', '.join(row['keywords']) if isinstance(row['keywords'], list) else row['keywords']}")
-        st.write("---") # Separator for readability
