@@ -107,7 +107,7 @@ dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
 
 # Statistiken und Indikatoren lesen
 urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
-dfStatistikenIndikatoren = pd.read_excel(urlexcel)
+dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl"))
 
 # Mapping auf Keywords
 dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
