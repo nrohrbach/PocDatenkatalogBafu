@@ -118,42 +118,46 @@ dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
-st.title('BAFU Datenkatalog')
+# Streamlit App
+st.title("BAFU Datenkatalog")
 
-# Search input
-search_term = st.text_input("Suche nach Stichwort:")
+# Search bar
+search_query = st.text_input("Suche nach Titel oder Beschreibung")
 
-# Filter dropdowns
-selected_keyword = st.selectbox("Filter nach Thema:", ['Alle'] + Thema)
-selected_type = st.selectbox("Filter nach Typ:", ['Alle'] + Datentyp)
+# Filters
+selected_thema = st.selectbox("Filter nach Keyword:", ["Alle"] + Thema)
+selected_typ = st.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
 
 # Apply filters
 filtered_df = dfCombined.copy()
 
-if selected_keyword != 'Alle':
-    # Filter by keyword (check if the keyword is in the list of keywords)
-    filtered_df = filtered_df[filtered_df['keywords'].apply(lambda x: selected_keyword.lower() in [k.lower() for k in x] if isinstance(x, list) else False)]
-
-if selected_type != 'Alle':
-    filtered_df = filtered_df[filtered_df['Typ'] == selected_type]
-
-# Apply search term filter
-if search_term:
+if search_query:
     filtered_df = filtered_df[
-        filtered_df.apply(lambda row: search_term.lower() in str(row.values).lower(), axis=1)
+        filtered_df['title'].str.contains(search_query, case=False, na=False) |
+        filtered_df['description'].str.contains(search_query, case=False, na=False)
     ]
 
-# Display results
-if not filtered_df.empty:
-           st.subheader("Resultate:")
-           if not filtered_df.empty:
-               for index, row in filtered_df.iterrows():
-                   with st.expander(f"**{row['title']}**"):
-                       st.write(f"**Typ:** {row['Typ']}")
-                       if pd.notnull(row['description']):
-                           st.write(f"**Beschreibung:** {row['description']}")
-                       if pd.notnull(row['keywords']) and isinstance(row['keywords'], list):
-                            st.write(f"**Keywords:** {', '.join(row['keywords'])}")
-           else:
-               st.info("Keine Ergebnisse gefunden.")
+if selected_thema != "Alle":
+    filtered_df = filtered_df[
+        filtered_df['keywords'].apply(lambda x: any(map_options(selected_thema) in kw for kw in x) if isinstance(x, list) else False)
+    ]
 
+
+if selected_typ != "Alle":
+    filtered_df = filtered_df[filtered_df['Typ'] == selected_typ]
+
+# Display results
+st.subheader(f"Gefundene Einträge: {len(filtered_df)}")
+
+if not filtered_df.empty:
+    for index, row in filtered_df.iterrows():
+        with st.expander(f"**{row['title']}**"):
+            st.write(f"**Typ:** {row['Typ']}")
+            st.write(f"**Beschreibung:** {row['description']}")
+            if 'modified' in row and pd.notnull(row['modified']):
+                st.write(f"**Zuletzt geändert:** {row['modified']}")
+            if 'url' in row and pd.notnull(row['url']):
+                 st.write(f"**Link:** [{row['url']}]({row['url']})")
+
+else:
+    st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
