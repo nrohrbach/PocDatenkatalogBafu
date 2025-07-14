@@ -131,54 +131,63 @@ dfCombined = get_bafu_data()
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
-# Checkboxes for Thema filter
-st.sidebar.header("Filter Optionen")
-selected_themas = []
-st.sidebar.subheader("Filter nach Thema:")
-for thema_option in Thema:
-    if st.sidebar.checkbox(thema_option, key=f"thema_{thema_option}"):
-        selected_themas.append(thema_option)
+# Streamlit App
+st.title("BAFU Datenkatalog")
 
-# Selectbox for Typ filter (keeping this as selectbox as per original code)
-selected_typ = st.sidebar.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
+# Fetch data
+dfCombined = get_bafu_data()
+
+if dfCombined is not None:
+    # Search bar
+    search_query = st.text_input("Suche nach Titel oder Beschreibung")
+
+    # Filter by Thema using checkboxes
+    st.sidebar.subheader("Themenfilter")
+    selected_themen = []
+    for thema_option in Thema:
+        if st.sidebar.checkbox(thema_option):
+            selected_themen.append(thema_option)
+
+    # Filter by Typ using selectbox (remains for now)
+    selected_typ = st.sidebar.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
 
 
-# Apply filters
-filtered_df = dfCombined.copy()
+    # Apply filters
+    filtered_df = dfCombined.copy()
 
-if search_query:
-    filtered_df = filtered_df[
-        filtered_df['title'].str.contains(search_query, case=False, na=False) |
-        filtered_df['description'].str.contains(search_query, case=False, na=False)
-    ]
-
-# Apply multiple Thema selections from checkboxes
-if selected_themas:
-    mapped_selected_themas = [map_options(t) for t in selected_themas if map_options(t) is not None]
-    if mapped_selected_themas:
+    if search_query:
         filtered_df = filtered_df[
-            filtered_df['keywords'].apply(lambda x: any(kw in mapped_selected_themas for kw in x) if isinstance(x, list) else False)
+            filtered_df['title'].str.contains(search_query, case=False, na=False) |
+            filtered_df['description'].str.contains(search_query, case=False, na=False)
         ]
+
+    # Apply Thema filter from checkboxes
+    if selected_themen:
+        mapped_selected_themen = [map_options(t) for t in selected_themen if map_options(t) is not None]
+        if mapped_selected_themen:
+            filtered_df = filtered_df[
+                filtered_df['keywords'].apply(lambda x: any(keyword in mapped_selected_themen for keyword in x) if isinstance(x, list) else False)
+            ]
+
+
+    if selected_typ != "Alle":
+        filtered_df = filtered_df[filtered_df['Typ'] == selected_typ]
+
+    # Display results
+    st.subheader(f"Gefundene Einträge: {len(filtered_df)}")
+
+    if not filtered_df.empty:
+        for index, row in filtered_df.iterrows():
+            with st.expander(f"**{row['title']}**"):
+                st.write(f"**Typ:** {row['Typ']}")
+                st.write(f"**Beschreibung:** {row['description']}")
+                if 'modified' in row and pd.notnull(row['modified']):
+                    st.write(f"**Zuletzt geändert:** {row['modified']}")
+                if 'url' in row and pd.notnull(row['url']):
+                     st.write(f"**Link:** [{row['url']}]({row['url']})")
+
     else:
-        # If no valid themes are selected, filter out all rows
-        filtered_df = filtered_df[0:0]
-
-
-if selected_typ != "Alle":
-    filtered_df = filtered_df[filtered_df['Typ'] == selected_typ]
-
-# Display results
-st.subheader(f"Gefundene Einträge: {len(filtered_df)}")
-
-if not filtered_df.empty:
-    for index, row in filtered_df.iterrows():
-        with st.expander(f"**{row['title']}**"):
-            st.write(f"**Typ:** {row['Typ']}")
-            st.write(f"**Beschreibung:** {row['description']}")
-            if 'modified' in row and pd.notnull(row['modified']):
-                st.write(f"**Zuletzt geändert:** {row['modified']}")
-            if 'url' in row and pd.notnull(row['url']):
-                 st.write(f"**Link:** [{row['url']}]({row['url']})")
-
+        st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
 else:
-    st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
+    st.error("Fehler beim Laden der Daten.")
+
