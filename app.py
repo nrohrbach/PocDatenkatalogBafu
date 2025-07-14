@@ -75,14 +75,14 @@ def map_options(option):
 
 # Funktion welche Keywords extrahiert
 def extract_keywords(x):
-    if isinstance(x, dict):
-        return set().union(*x.values())
-    elif isinstance(x, list):
-        return set(x)
-    elif isinstance(x, str):
-        return {x}
-    else:
-        return set()
+           if isinstance(x, dict):
+                      return set().union(*x.values())
+           elif isinstance(x, list):
+                      return set(x)
+           elif isinstance(x, str):
+                      return {x}
+           else:
+                      return set()
 
 
 # Funktion welche Daten aus opendata.swiss und Indikatoren abfragt
