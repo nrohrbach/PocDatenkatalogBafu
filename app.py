@@ -163,18 +163,19 @@ if dfCombined is not None:
 
     # Apply Thema filter from checkboxes
     if selected_themen:
-        #mapped_selected_themen = [map_options(t) for t in selected_themen if map_options(t) is not None]
-        mapped_selected_themen = [
-                      keyword
-                      for t in selected_themen
-                      if map_options(t) is not None
-                      for keyword in map_options(t)  
-          ]
+        mapped_selected_themen = [map_options(t) for t in selected_themen if map_options(t) is not None]
 
         if mapped_selected_themen:
-            filtered_df = filtered_df[
-                filtered_df['keywords'].apply(lambda x: any(keyword in mapped_selected_themen for keyword in x) if isinstance(x, list) else False)
-            ]
+           filtered_df = filtered_df[
+               filtered_df['keywords'].apply(
+                   lambda x: bool(set().union(*x.values()) & set(mapped_selected_themen))
+                   if isinstance(x, dict) else False
+               )
+           ]
+
+            #filtered_df = filtered_df[
+             #   filtered_df['keywords'].apply(lambda x: any(keyword in mapped_selected_themen for keyword in x) if isinstance(x, list) else False)
+            #]
 
 
     if selected_typ != "Alle":
