@@ -92,7 +92,6 @@ def get_bafu_data():
   try:
     response = requests.get(url, params=params)
     response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
-
     data = response.json()
 
     if data['success']:
@@ -128,7 +127,7 @@ def get_bafu_data():
       return None
 
              
- dfCombined = get_bafu_data()
+dfCombined = get_bafu_data()
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
