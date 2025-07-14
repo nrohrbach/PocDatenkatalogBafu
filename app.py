@@ -43,130 +43,80 @@ Monitoring = ['LFI',
               'LABES',
               'BDM',
               'SonBase']
-#--------------------
-def prepare_bafu_data():
-  """
-  Fetches BAFU data from opendata.swiss, reads an Excel file for statistics,
-  and combines and processes the dataframes.
 
-  Returns:
-      pandas.DataFrame or None: A combined and processed DataFrame if successful,
-                                 otherwise None.
-  """
-  # Define the lists used in the original code
-  Thema =   ['Abfall',
-           'Altlasten',
-           'Bildung, Forschung, Innovation',
-           'Biodiversität',
-           'Biotechnologie',
-           'Boden',
-           'Chemikalien',
-           'Elektrosmog und Licht',
-           'Ernährung, Wohnen, Mobilität',
-           'Gesundheit',
-           'Internationales',
-           'Klima',
-           'Landschaft',
-           'Lärm',
-           'Luft',
-           'Naturgefahren',
-           'Recht',
-           'Störfallvorsorge',
-           'Umweltverträglichkeitsprüfung',
-           'Wald & Holz',
-           'Wasser',
-           'Wirtschaft und Konsum'
-           ]
-
-  Datentyp = ['Indikator',
-            'Statistik',
-            'Geodaten',
-            'Geodatenmodell',
-            'Monitoring',
-            'Daten']
-
-  Monitoring = ['LFI',
-              'NABO',
-              'NABEL',
-              'NADUF',
-              'NAWA',
-              'NAQUA',
-              'LABES',
-              'BDM',
-              'SonBase',]
-
-  # Mapping function (assuming it's defined elsewhere or defined here)
-  def map_options(option):
-    mapping = {
-        'Abfall': 'abfall',
-        'Altlasten': 'altlasten',
-        'Bildung, Forschung, Innovation': 'bildung',
-        'Biodiversität': 'biodiversitat',
-        'Biotechnologie' : 'biotechnologie',
-        'Boden' : 'boden',
-        'Chemikalien' : 'chemikalien',
-        'Elektrosmog und Licht' : 'elektrosmog',
-        'Ernährung, Wohnen, Mobilität'  : 'ernaehrung',
-        'Gesundheit'  : 'gesundheit',
-        'Internationales'  : 'internationales',
-        'Klima'  : 'klima',
-        'Landschaft'  : 'landschaft',
-        'Lärm'  : 'laerm',
-        'Luft'  : 'luft',
-        'Naturgefahren'  : 'naturgefahren',
-        'Recht'  : 'recht',
-        'Störfallvorsorge'  : 'storfallvorsorge',
-        'Umweltverträglichkeitsprüfung'  : 'umweltvertraeglichkeitpruefung',
-        'Wald & Holz'  : 'wald',
-        'Wasser'  : 'wasser',
-        'Wirtschaft und Konsum'  : 'wirtschaft'
-    }
-    return mapping.get(option, None) # Return None if option is not found
-
-
-  # Bafu Daten aus opendata.swiss abfragen
-  url = "https://opendata.swiss/api/3/action/package_search"
-  params = {
-      "q": "organization:bundesamt-fur-umwelt-bafu",
-      "rows": 1000  # Request a large number of rows to get all entries
+# Mapping der BAFU-Themen auf das Keyword bei opendata.swiss
+def map_options(option):
+  mapping = {
+      'Abfall': 'abfall',
+      'Altlasten': 'altlasten',
+      'Bildung, Forschung, Innovation': 'bildung',
+      'Biodiversität': 'biodiversitat',
+      'Biotechnologie' : 'biotechnologie',
+      'Boden' : 'boden',
+      'Chemikalien' : 'chemikalien',
+      'Elektrosmog und Licht' : 'elektrosmog',
+      'Ernährung, Wohnen, Mobilität'  : 'ernaehrung',
+      'Gesundheit'  : 'gesundheit',
+      'Internationales'  : 'internationales',
+      'Klima'  : 'klima',
+      'Landschaft'  : 'landschaft',
+      'Lärm'  : 'laerm',
+      'Luft'  : 'luft',
+      'Naturgefahren'  : 'naturgefahren',
+      'Recht'  : 'recht',
+      'Störfallvorsorge'  : 'storfallvorsorge',
+      'Umweltverträglichkeitsprüfung'  : 'umweltvertraeglichkeitpruefung',
+      'Wald & Holz'  : 'wald',
+      'Wasser'  : 'wasser',
+      'Wirtschaft und Konsum'  : 'wirtschaft'
   }
-  try:
-    response = requests.get(url, params=params)
-    response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
+  return mapping.get(option, None) # Return None if option is not found
 
+# Bafu Daten aus opendata.swiss abfragen
+url = "https://opendata.swiss/api/3/action/package_search"
+params = {
+    "q": "organization:bundesamt-fur-umwelt-bafu",
+    "rows": 1000  # Request a large number of rows to get all entries
+}
+
+response = requests.get(url, params=params)
+
+
+
+if response.status_code == 200:
     data = response.json()
     if data['success']:
         packages = data['result']['results']
-        dfOpendataSwiss = pd.DataFrame(packages)
+        df = pd.DataFrame(packages)
     else:
         print("API request was not successful.")
-        print(data.get('error', 'No error message provided.'))
-        return None
-  except requests.exceptions.RequestException as e:
-      print(f"Error fetching data from opendata.swiss: {e}")
-      return None
+        print(data['error'])
+else:
+    print(f"Error: Failed to retrieve data. Status code: {response.status_code}")
 
-  dfOpendataSwiss = dfOpendataSwiss[['keywords', 'title','description', 'modified']]
-  dfOpendataSwiss['description'] = dfOpendataSwiss['description'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
-  dfOpendataSwiss['title'] = dfOpendataSwiss['title'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
-  dfOpendataSwiss['Typ'] = 'Daten'
-  dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Geodatenmodell' if isinstance(row['title'], str) and 'Geodatenmodell' in row['title'] else row['Typ'], axis=1)
-  dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
-      lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'],
-      axis=1
-  )
+dfOpendataSwiss = df
+dfOpendataSwiss = dfOpendataSwiss[['keywords', 'title','description', 'modified']]
+dfOpendataSwiss['description'] = dfOpendataSwiss['description'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
+dfOpendataSwiss['title'] = dfOpendataSwiss['title'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
+dfOpendataSwiss['Typ'] = 'Daten'
+dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Geodatenmodell' if 'Geodatenmodell' in str(row['title']) else row['Typ'], axis=1)
 
-  # Statistiken und Indikatoren lesen
-  urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
-  try:
-    dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
-  except Exception as e:
-      print(f"Error reading Excel file: {e}")
-      return None
+# prompt: wenn ein Wort aus dem Array Monitoring in title oder description vorkommt, wird das Attribut Typ auf Monitoring gesetzt
+dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
+    lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'],
+    axis=1
+)
 
+# Statistiken und Indikatoren lesen
+urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
+dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
 
+# Mapping auf Keywords
+dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
 
-df_combined_data = prepare_bafu_data()
+# Combine the two dataframes
+dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index=True)
+
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
