@@ -167,11 +167,11 @@ if dfCombined is not None:
 
         if mapped_selected_themen:
            filtered_df = filtered_df[
-               filtered_df['keywords'].apply(
-                   lambda x: bool(set().union(*x.values()) & set(mapped_selected_themen))
-                   if isinstance(x, dict) else False
-               )
-           ]
+                   filtered_df['keywords'].apply(
+                              lambda x: bool(set().union(*x.values()) & set(mapped_selected_themen))
+                              if isinstance(x, dict) else False
+                   )
+                   ]
 
             #filtered_df = filtered_df[
              #   filtered_df['keywords'].apply(lambda x: any(keyword in mapped_selected_themen for keyword in x) if isinstance(x, list) else False)
