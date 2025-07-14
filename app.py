@@ -131,16 +131,17 @@ dfCombined = get_bafu_data()
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
-# Streamlit App
-st.title("BAFU Datenkatalog")
+# Checkboxes for Thema filter
+st.sidebar.header("Filter Optionen")
+selected_themas = []
+st.sidebar.subheader("Filter nach Thema:")
+for thema_option in Thema:
+    if st.sidebar.checkbox(thema_option, key=f"thema_{thema_option}"):
+        selected_themas.append(thema_option)
 
+# Selectbox for Typ filter (keeping this as selectbox as per original code)
+selected_typ = st.sidebar.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
 
-# Search bar
-search_query = st.text_input("Suche nach Titel oder Beschreibung")
-
-# Filters
-selected_thema = st.selectbox("Filter nach Keyword:", ["Alle"] + Thema)
-selected_typ = st.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
 
 # Apply filters
 filtered_df = dfCombined.copy()
@@ -151,10 +152,16 @@ if search_query:
         filtered_df['description'].str.contains(search_query, case=False, na=False)
     ]
 
-if selected_thema != "Alle":
-    filtered_df = filtered_df[
-        filtered_df['keywords'].apply(lambda x: any(map_options(selected_thema) in kw for kw in x) if isinstance(x, list) else False)
-    ]
+# Apply multiple Thema selections from checkboxes
+if selected_themas:
+    mapped_selected_themas = [map_options(t) for t in selected_themas if map_options(t) is not None]
+    if mapped_selected_themas:
+        filtered_df = filtered_df[
+            filtered_df['keywords'].apply(lambda x: any(kw in mapped_selected_themas for kw in x) if isinstance(x, list) else False)
+        ]
+    else:
+        # If no valid themes are selected, filter out all rows
+        filtered_df = filtered_df[0:0]
 
 
 if selected_typ != "Alle":
@@ -175,28 +182,3 @@ if not filtered_df.empty:
 
 else:
     st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
-
-
-# 1. Install ngrok:
-# !pip install pyngrok
-
-# 2. Import and authenticate (optional, but good practice for persistent tunnels):
-# from pyngrok import ngrok
-# ngrok.set_auth_token("YOUR_NGROK_AUTHTOKEN") # Get your token from ngrok.com
-
-# 3. Save the code above as a Python file (e.g., app.py) in your Colab environment.
-#    You can do this by clicking File > New > Python 3 notebook, then saving the cell
-#    content as a file.
-
-# 4. Run the Streamlit app using !streamlit run:
-# !streamlit run app.py &>/dev/null&
-
-# 5. Start ngrok to expose the Streamlit port (default is 8501):
-# public_url = ngrok.connect(port='8501')
-# public_url
-
-# This will print a public URL that you can click to access your Streamlit app.
-# The `&>/dev/null&` sends the Streamlit output to null and runs it in the background
-# so your Colab notebook doesn't get blocked. You can monitor the Streamlit process
-# with `!pgrep streamlit`. To stop it, use `!pkill streamlit`.
-
