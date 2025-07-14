@@ -43,7 +43,7 @@ Monitoring = ['LFI',
               'LABES',
               'BDM',
               'SonBase']
-
+#--------------------
 # Mapping der BAFU-Themen auf das Keyword bei opendata.swiss
 def map_options(option):
   mapping = {
@@ -125,6 +125,9 @@ def map_options(option):
   dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index=True)
 
   return dfCombined
+
+
+
 
 df_combined_data = prepare_bafu_data()
 #--------------------------------------------------------------------------
