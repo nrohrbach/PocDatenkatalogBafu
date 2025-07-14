@@ -106,8 +106,7 @@ def get_bafu_data():
         dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Geodatenmodell' if 'Geodatenmodell' in str(row['title']) else row['Typ'], axis=1)
         
         # prompt: wenn ein Wort aus dem Array Monitoring in title oder description vorkommt, wird das Attribut Typ auf Monitoring gesetzt
-        dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
-            lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'], axis=1)
+        dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'], axis=1)
 
         # Statistiken und Indikatoren lesen
         urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
