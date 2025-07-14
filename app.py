@@ -73,6 +73,18 @@ def map_options(option):
   }
   return mapping.get(option, None) # Return None if option is not found
 
+# Funktion welche Keywords extrahiert
+def extract_keywords(x):
+    if isinstance(x, dict):
+        return set().union(*x.values())
+    elif isinstance(x, list):
+        return set(x)
+    elif isinstance(x, str):
+        return {x}
+    else:
+        return set()
+
+
 # Funktion welche Daten aus opendata.swiss und Indikatoren abfragt
 #--------------------------------------------------------------------------
 @st.cache_data
@@ -168,11 +180,10 @@ if dfCombined is not None:
         if mapped_selected_themen:
            filtered_df = filtered_df[
                    filtered_df['keywords'].apply(
-                              lambda x: bool(set().union(*x.values()) & set(mapped_selected_themen))
-                              if isinstance(x, dict) else False
+                              lambda x: bool(extract_keywords(x) & set(mapped_selected_themen))
                    )
                    ]
-
+           
             #filtered_df = filtered_df[
              #   filtered_df['keywords'].apply(lambda x: any(keyword in mapped_selected_themen for keyword in x) if isinstance(x, list) else False)
             #]
