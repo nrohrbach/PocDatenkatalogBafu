@@ -73,53 +73,66 @@ def map_options(option):
   return mapping.get(option, None) # Return None if option is not found
 
 # Bafu Daten aus opendata.swiss abfragen
-url = "https://opendata.swiss/api/3/action/package_search"
-params = {
-    "q": "organization:bundesamt-fur-umwelt-bafu",
-    "rows": 1000  # Request a large number of rows to get all entries
-}
+  # Bafu Daten aus opendata.swiss abfragen
+  url = "https://opendata.swiss/api/3/action/package_search"
+  params = {
+      "q": "organization:bundesamt-fur-umwelt-bafu",
+      "rows": 1000  # Request a large number of rows to get all entries
+  }
+  try:
+    response = requests.get(url, params=params)
+    response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
 
-response = requests.get(url, params=params)
-
-if response.status_code == 200:
     data = response.json()
     if data['success']:
         packages = data['result']['results']
-        df = pd.DataFrame(packages)
+        dfOpendataSwiss = pd.DataFrame(packages)
     else:
         print("API request was not successful.")
-        print(data['error'])
-else:
-    print(f"Error: Failed to retrieve data. Status code: {response.status_code}")
+        print(data.get('error', 'No error message provided.'))
+        return None
+  except requests.exceptions.RequestException as e:
+      print(f"Error fetching data from opendata.swiss: {e}")
+      return None
 
-dfOpendataSwiss = df
-dfOpendataSwiss = dfOpendataSwiss[['keywords', 'title','description', 'modified']]
-dfOpendataSwiss['description'] = dfOpendataSwiss['description'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
-dfOpendataSwiss['title'] = dfOpendataSwiss['title'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
-dfOpendataSwiss['Typ'] = 'Daten'
-dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Geodatenmodell' if 'Geodatenmodell' in str(row['title']) else row['Typ'], axis=1)
+  dfOpendataSwiss = dfOpendataSwiss[['keywords', 'title','description', 'modified']]
+  dfOpendataSwiss['description'] = dfOpendataSwiss['description'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
+  dfOpendataSwiss['title'] = dfOpendataSwiss['title'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
+  dfOpendataSwiss['Typ'] = 'Daten'
+  dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Geodatenmodell' if isinstance(row['title'], str) and 'Geodatenmodell' in row['title'] else row['Typ'], axis=1)
+  dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
+      lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'],
+      axis=1
+  )
 
-# prompt: wenn ein Wort aus dem Array Monitoring in title oder description vorkommt, wird das Attribut Typ auf Monitoring gesetzt
-dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(
-    lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'],
-    axis=1
-)
+  # Statistiken und Indikatoren lesen
+  urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
+  try:
+    dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
+  except Exception as e:
+      print(f"Error reading Excel file: {e}")
+      return None
 
-# Statistiken und Indikatoren lesen
-urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
-dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
+  # Mapping auf Keywords
+  dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
+  dfStatistikenIndikatoren['Typ'] = dfStatistikenIndikatoren['Typ'].apply(lambda x: [x] if pd.notnull(x) else [])
 
-# Mapping auf Keywords
-dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
 
-# Combine the two dataframes
-dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index=True)
+  # Combine the two dataframes
+  # Ensure consistent column names before concatenation
+  # Assuming the columns are already aligned based on the original code
+  # If not, you might need to select and reorder columns
+  dfCombined = pd.concat([dfOpendataSwiss, dfStatistikenIndikatoren], ignore_index=True)
 
+  return dfCombined
+
+df_combined_data = prepare_bafu_data()
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
 # Streamlit App
 st.title("BAFU Datenkatalog")
+
 
 # Search bar
 search_query = st.text_input("Suche nach Titel oder Beschreibung")
