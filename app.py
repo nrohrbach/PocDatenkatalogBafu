@@ -149,7 +149,7 @@ if dfCombined is not None:
             selected_themen.append(thema_option)
 
     # Filter by Typ using selectbox (remains for now)
-    selected_typ = st.sidebar.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
+    selected_typ = st.selectbox("Filter nach Typ:", ["Alle"] + Datentyp)
 
 
     # Apply filters
