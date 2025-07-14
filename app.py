@@ -127,6 +127,7 @@ def get_bafu_data():
   except requests.exceptions.RequestException as e:
       print(f"Error fetching data: {e}")
       return None
+             
  dfCombined = get_bafu_data()
 #--------------------------------------------------------------------------
 # Streamlit App
