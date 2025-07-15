@@ -88,7 +88,7 @@ def extract_keywords(x):
 
 # Funktion welche Daten aus opendata.swiss und Indikatoren abfragt
 #--------------------------------------------------------------------------
-#@st.cache_data
+@st.cache_data
 def get_bafu_data():
   """
   Fetches data packages from the opendata.swiss API for the BAFU organization.
@@ -209,7 +209,7 @@ if dfCombined is not None:
                 if 'Kontakt' in row and pd.notnull(row['Kontakt']):
                      st.write(f"**Kontakt:** [{row['Kontakt']}]({row['Kontakt']})")
                 if 'URL' in row and pd.notnull(row['URL']):
-                     st.write(f"**Download:** [{'Downloadlink'}]({row['URL']})")
+                     st.write(f"**Download:** [{'Daten herunterladen'}]({row['URL']})")
 
     else:
         st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
