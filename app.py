@@ -88,7 +88,7 @@ def extract_keywords(x):
 
 # Funktion welche Daten aus opendata.swiss und Indikatoren abfragt
 #--------------------------------------------------------------------------
-@st.cache_data
+#@st.cache_data
 def get_bafu_data():
   """
   Fetches data packages from the opendata.swiss API for the BAFU organization.
@@ -111,7 +111,9 @@ def get_bafu_data():
         packages = data['result']['results']
         df = pd.DataFrame(packages)
         dfOpendataSwiss = df
-        dfOpendataSwiss = dfOpendataSwiss[['keywords', 'title','description', 'modified']]
+        dfOpendataSwiss['URL'] = 'https://opendata.swiss/de/dataset/' + dfOpendataSwiss['title_for_slug']
+        dfOpendataSwiss['Kontakt'] = dfOpendataSwiss['maintainer_email']
+        dfOpendataSwiss = dfOpendataSwiss[['keywords', 'title','description', 'modified','issued','Kontakt','URL',]]
         dfOpendataSwiss['description'] = dfOpendataSwiss['description'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
         dfOpendataSwiss['title'] = dfOpendataSwiss['title'].apply(lambda x: x['de'] if isinstance(x, dict) and 'de' in x else None)
         dfOpendataSwiss['Typ'] = 'Daten'
@@ -141,6 +143,7 @@ def get_bafu_data():
 
              
 dfCombined = get_bafu_data()
+
 #--------------------------------------------------------------------------
 # Streamlit App
 #--------------------------------------------------------------------------
@@ -203,8 +206,8 @@ if dfCombined is not None:
                 st.write(f"**Beschreibung:** {row['description']}")
                 if 'modified' in row and pd.notnull(row['modified']):
                     st.write(f"**Zuletzt geändert:** {row['modified']}")
-                if 'url' in row and pd.notnull(row['url']):
-                     st.write(f"**Link:** [{row['url']}]({row['url']})")
+                if 'URL' in row and pd.notnull(row['URL']):
+                     st.write(f"**Download:** [{row['URL']}]({row['URL']})")
 
     else:
         st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
