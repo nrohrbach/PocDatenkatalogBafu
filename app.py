@@ -32,7 +32,8 @@ Datentyp = ['Indikator',
             'Geodaten',
             'Geodatenmodell',
             'Monitoring',
-            'Daten']
+            'Daten',
+            'Daten von Webseite']
 
 Monitoring = ['LFI',
               'NABO',
