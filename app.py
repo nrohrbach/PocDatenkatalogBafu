@@ -206,8 +206,10 @@ if dfCombined is not None:
                 st.write(f"**Beschreibung:** {row['description']}")
                 if 'modified' in row and pd.notnull(row['modified']):
                     st.write(f"**Zuletzt geändert:** {row['modified']}")
+                if 'Kontakt' in row and pd.notnull(row['Kontakt']):
+                     st.write(f"**Kontakt:** [{row['Kontakt']}]({row['Kontakt']})")
                 if 'URL' in row and pd.notnull(row['URL']):
-                     st.write(f"**Download:** [{row['URL']}]({row['URL']})")
+                     st.write(f"**Download:** [{'Downloadlink'}]({row['URL']})")
 
     else:
         st.info("Keine Einträge gefunden, die den Kriterien entsprechen.")
