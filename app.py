@@ -126,7 +126,7 @@ def get_bafu_data():
         #urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
         #dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
         urlcsv = 'https://nrohrbach.github.io/PocDatenkatalogBafu/Metadaten.csv'
-        dfStatistikenIndikatoren = pd.read_csv(urlcsv)
+        dfStatistikenIndikatoren = pd.read_csv(urlcsv,sep=';')
 
         # Mapping auf Keywords
         dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
