@@ -123,8 +123,10 @@ def get_bafu_data():
         dfOpendataSwiss['Typ'] = dfOpendataSwiss.apply(lambda row: 'Monitoring' if any(word in str(row['title']) or word in str(row['description']) for word in Monitoring) else row['Typ'], axis=1)
 
         # Statistiken und Indikatoren lesen
-        urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
-        dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
+        #urlexcel = 'https://uvek-gis.admin.ch/BAFU/umweltdaten/opendata.swiss/StatistikenIndikatoren.xlsx'
+        #dfStatistikenIndikatoren = pd.read_excel(urlexcel, engine="openpyxl")
+        urlcsv = 'https://nrohrbach.github.io/PocDatenkatalogBafu/Metadaten.csv'
+        dfStatistikenIndikatoren = pd.read_csv(urlcsv)
 
         # Mapping auf Keywords
         dfStatistikenIndikatoren['keywords'] = dfStatistikenIndikatoren['keywords'].apply(lambda x: [map_options(x)] if pd.notnull(x) and map_options(x) is not None else [])
