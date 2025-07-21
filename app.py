@@ -209,7 +209,7 @@ if dfCombined is not None:
                 if 'modified' in row and pd.notnull(row['modified']):
                     st.write(f"**Zuletzt geändert:** {row['modified']}")
                 if 'Kontakt' in row and pd.notnull(row['Kontakt']):
-                     st.write(f"**Kontakt:** {row['Kontakt']})
+                     st.write(f"**Kontakt:** {row['Kontakt']}")
                 if 'URL' in row and pd.notnull(row['URL']):
                      st.write(f"**Download:** [{'Daten herunterladen'}]({row['URL']})")
 
