@@ -20,8 +20,8 @@ def write_dataset(row: pd.DataFrame, identifier: str):
     dataset['dct:accessRights'] = "PUBLIC"
     dataset["bvclassification"] = "none"
     dataset["dcat:contactPoint"] = {
-        "schema:name": row["Kontakt"],
-        "schema:email": row["Kontakt"]
+        "schema:name": row["Kontakt"] if row["Kontakt"] is not np.nan else "data@bafu.admin.ch",
+        "schema:email": row["Kontakt"] if row["Kontakt"] is not np.nan else "data@bafu.admin.ch"
     }
     dataset["dct:issued"] = row["modified"] if row["modified"] is not np.nan else "2025-07-23"
     dataset["dct:modified"] = row["modified"] if row["modified"] is not np.nan else "2025-07-23"
