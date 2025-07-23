@@ -119,8 +119,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -131,7 +131,7 @@
                 "dct:identifier": "3dist_a",
                 "dct:title": "Landwirtschaftliche Betriebsparameter zur Berechnung der Ammoniak-Emissionen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             }
         ]
     },
@@ -153,8 +153,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -165,7 +165,7 @@
                 "dct:identifier": "4dist_a",
                 "dct:title": "Industrieholzerhebung - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             }
         ]
     },
@@ -244,7 +244,7 @@
             "de": "Exportierte Sonderabfälle"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -285,7 +285,7 @@
             "de": "Importierte Sonderabfälle"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -326,7 +326,7 @@
             "de": "In der Schweiz anfallende Sonderabfälle"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -419,8 +419,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -431,13 +431,13 @@
                 "dct:identifier": "11dist_a",
                 "dct:title": "Abfallverbrennung - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "11dist_indicator",
                 "dct:title": "Abfallverbrennung - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -449,7 +449,7 @@
             "de": "In Zementwerk entsorgte Abfallmenge"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -531,7 +531,7 @@
             "de": "Energieproduktion aus Abfällen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -695,7 +695,7 @@
             "de": "Grenzüberschreitender Verkehr mit Abfällen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -736,7 +736,7 @@
             "de": "Auf Deponien abgelagerte Abfälle"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -777,7 +777,7 @@
             "de": "Bauabfälle"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -818,7 +818,7 @@
             "de": "Separat gesammelte Abfälle"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -859,7 +859,7 @@
             "de": "Gesamtrecyclingquote Abfallwirtschaft Schweiz (inklusive Ausbruch/Aushub)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -900,7 +900,7 @@
             "de": "Abgelagerte Abfälle auf Deponien"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -982,7 +982,7 @@
             "de": "Untersuchte Standorte"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Altlasten",
@@ -1351,7 +1351,7 @@
             "de": "Verbotene invasive gebietsfremde Arten gemäss Verordnungen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -1597,7 +1597,7 @@
             "de": "Freizeitfischerei"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -1649,8 +1649,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -1661,13 +1661,13 @@
                 "dct:identifier": "41dist_a",
                 "dct:title": "Ausgewiesene Gebiete für Biodiversität - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "41dist_indicator",
                 "dct:title": "Ausgewiesene Gebiete für Biodiversität - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -1690,8 +1690,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -1702,13 +1702,13 @@
                 "dct:identifier": "42dist_a",
                 "dct:title": "Kupfer- und Zinkbelastung von Landwirtschaftsböden - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "42dist_indicator",
                 "dct:title": "Kupfer- und Zinkbelastung von Landwirtschaftsböden - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -1731,8 +1731,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -1743,13 +1743,13 @@
                 "dct:identifier": "43dist_a",
                 "dct:title": "Kohlenstoffgehalt von Landwirtschaftsböden - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "43dist_indicator",
                 "dct:title": "Kohlenstoffgehalt von Landwirtschaftsböden - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -1884,7 +1884,7 @@
             "de": "Wirtschaftstätigkeit Biotechnologie"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biotechnologie",
@@ -2059,8 +2059,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2071,13 +2071,13 @@
                 "dct:identifier": "51dist_a",
                 "dct:title": "Freisetzungsversuche mit gentechnisch veränderten Organismen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "51dist_indicator",
                 "dct:title": "Freisetzungsversuche mit gentechnisch veränderten Organismen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2089,7 +2089,7 @@
             "de": "Kantonale Inspektionen von Tätigkeiten gemäss Einschliessungsverordnung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biotechnologie",
@@ -2141,8 +2141,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2153,13 +2153,13 @@
                 "dct:identifier": "53dist_a",
                 "dct:title": "Betriebe ohne Potential für schwere Schädigungen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "53dist_indicator",
                 "dct:title": "Betriebe ohne Potential für schwere Schädigungen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2223,8 +2223,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2235,13 +2235,13 @@
                 "dct:identifier": "55dist_a",
                 "dct:title": "Auftauen des Permafrostes - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "55dist_indicator",
                 "dct:title": "Auftauen des Permafrostes - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2305,8 +2305,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2317,13 +2317,13 @@
                 "dct:identifier": "57dist_a",
                 "dct:title": "Schäden durch Hochwasser, Murgänge, Rutschungen und Sturzprozesse - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "57dist_indicator",
                 "dct:title": "Schäden durch Hochwasser, Murgänge, Rutschungen und Sturzprozesse - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2376,7 +2376,7 @@
             "de": "Anzahl lokale Naturgefahrenberatende"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -2417,7 +2417,7 @@
             "de": "Projekte mit Mehrleistungen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -2499,7 +2499,7 @@
             "de": "Erdbebenspezifische Vollzugspraxis bei Leitbehörden und Bauherrenvertretern des Bundes"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -2581,7 +2581,7 @@
             "de": "Stand Umsetzung Massnahmen IRM gemäss Bericht Umgang mit Naturgefahren in der Schweiz"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -2622,7 +2622,7 @@
             "de": "Entwicklungsstand der Instrumente für das Monitoring und die Steuerung der Risiken gravitative Gefahren, Störfälle und Erdbeben"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -2674,8 +2674,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2686,13 +2686,13 @@
                 "dct:identifier": "66dist_a",
                 "dct:title": "Behandelte Schutzwaldfläche - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "66dist_indicator",
                 "dct:title": "Behandelte Schutzwaldfläche - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2756,8 +2756,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2768,13 +2768,13 @@
                 "dct:identifier": "68dist_a",
                 "dct:title": "Biodiversitäts-Fussabdruck - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "68dist_indicator",
                 "dct:title": "Biodiversitäts-Fussabdruck - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2879,8 +2879,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -2891,13 +2891,13 @@
                 "dct:identifier": "71dist_a",
                 "dct:title": "Ökologie im Gebäudebereich - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "71dist_indicator",
                 "dct:title": "Ökologie im Gebäudebereich - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -2950,7 +2950,7 @@
             "de": "Ökobilanzdatensätze"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -2991,7 +2991,7 @@
             "de": "Anzahl Beschaffungen, zu denen die Fachstelle Beratungsleistungen erbringt (Anfragen für Kriterien, Labels, Anbieter etc.)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -3412,8 +3412,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -3424,13 +3424,13 @@
                 "dct:identifier": "84dist_a",
                 "dct:title": "Trockenperioden - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "84dist_indicator",
                 "dct:title": "Trockenperioden - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -3524,7 +3524,7 @@
             "de": "Auftauen des St. Moritzersees"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -3606,7 +3606,7 @@
             "de": "Pisten mit Beschneiungsanlagen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -3781,8 +3781,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -3793,13 +3793,13 @@
                 "dct:identifier": "93dist_a",
                 "dct:title": "Neue erneuerbare Energien - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "93dist_indicator",
                 "dct:title": "Neue erneuerbare Energien - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -3945,8 +3945,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -3957,13 +3957,13 @@
                 "dct:identifier": "97dist_a",
                 "dct:title": "Bodenversiegelung - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "97dist_indicator",
                 "dct:title": "Bodenversiegelung - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -4098,7 +4098,7 @@
             "de": "Landschaften von nationaler Bedeutung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Landschaft",
@@ -4150,8 +4150,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -4162,13 +4162,13 @@
                 "dct:identifier": "102dist_a",
                 "dct:title": "Städtisches Grün - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "102dist_indicator",
                 "dct:title": "Städtisches Grün - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -4273,8 +4273,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -4285,13 +4285,13 @@
                 "dct:identifier": "105dist_a",
                 "dct:title": "Externe Lärmkosten - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "105dist_indicator",
                 "dct:title": "Externe Lärmkosten - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -4303,7 +4303,7 @@
             "de": "Lärmschutzmassnahmen Flugverkehr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -4344,7 +4344,7 @@
             "de": "Lärmschutz Schienenverkehr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -4426,7 +4426,7 @@
             "de": "Schutz Strassenlärm (Programmvereinbarung)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -4467,7 +4467,7 @@
             "de": "Endverbrauch von fossilen Energien"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -4642,8 +4642,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -4654,13 +4654,13 @@
                 "dct:identifier": "114dist_a",
                 "dct:title": "Schwefeldioxid-Emissionen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "114dist_indicator",
                 "dct:title": "Schwefeldioxid-Emissionen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -4683,8 +4683,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -4695,13 +4695,13 @@
                 "dct:identifier": "115dist_a",
                 "dct:title": "Schwermetall-Emissionen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "115dist_indicator",
                 "dct:title": "Schwermetall-Emissionen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -4929,8 +4929,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -4941,13 +4941,13 @@
                 "dct:identifier": "121dist_a",
                 "dct:title": "Schwefeldioxid-Immissionen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "121dist_indicator",
                 "dct:title": "Schwefeldioxid-Immissionen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -5041,7 +5041,7 @@
             "de": "Übermässiger Stickstoffeintrag in naturnahen Ökosystemen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -5615,7 +5615,7 @@
             "de": "SIM-Karten Mobilfunk"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog",
@@ -5738,7 +5738,7 @@
             "de": "Hochspannungsleitungen der allgemeinen Stromversorgung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog",
@@ -5779,7 +5779,7 @@
             "de": "Unterwerke der allgemeinen Stromversorgung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog",
@@ -5820,7 +5820,7 @@
             "de": "Transformatorenstationen der allgemeinen Stromversorgung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog",
@@ -5861,7 +5861,7 @@
             "de": "Gesamtstromverbrauch (ohne Eisenbahnen)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog",
@@ -5902,7 +5902,7 @@
             "de": "Stromverbrauch der Eisenbahnen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog",
@@ -6077,8 +6077,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -6089,13 +6089,13 @@
                 "dct:identifier": "149dist_a",
                 "dct:title": "Bevölkerungswachstum - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "149dist_indicator",
                 "dct:title": "Bevölkerungswachstum - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -6312,7 +6312,7 @@
             "de": "Verkäufe von Pflanzenschutzmitteln"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -6353,7 +6353,7 @@
             "de": "Flächenverbrauch der Verkehrsinfrastruktur"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Boden",
@@ -6394,7 +6394,7 @@
             "de": "Bodennutzung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Boden",
@@ -6517,7 +6517,7 @@
             "de": "Energieverbrauch"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -6558,7 +6558,7 @@
             "de": "Bestand Personenwagen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -6599,7 +6599,7 @@
             "de": "Luftverkehr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -6651,8 +6651,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -6663,13 +6663,13 @@
                 "dct:identifier": "163dist_a",
                 "dct:title": "Landwirtschaftliche Produktion - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "163dist_indicator",
                 "dct:title": "Landwirtschaftliche Produktion - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -6763,7 +6763,7 @@
             "de": "Anzahl Betriebe, die PRTR unterliegen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Chemikalien",
@@ -7020,8 +7020,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7032,13 +7032,13 @@
                 "dct:identifier": "172dist_a",
                 "dct:title": "Rodungen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "172dist_indicator",
                 "dct:title": "Rodungen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7143,8 +7143,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7155,13 +7155,13 @@
                 "dct:identifier": "175dist_a",
                 "dct:title": "Holzvorrat - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "175dist_indicator",
                 "dct:title": "Holzvorrat - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7225,8 +7225,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7237,13 +7237,13 @@
                 "dct:identifier": "177dist_a",
                 "dct:title": "Totholz - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "177dist_indicator",
                 "dct:title": "Totholz - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7266,8 +7266,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7278,13 +7278,13 @@
                 "dct:identifier": "178dist_a",
                 "dct:title": "Ergebnis der Waldbewirtschaftung - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "178dist_indicator",
                 "dct:title": "Ergebnis der Waldbewirtschaftung - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7389,8 +7389,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7401,13 +7401,13 @@
                 "dct:identifier": "181dist_a",
                 "dct:title": "Waldreservate - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "181dist_indicator",
                 "dct:title": "Waldreservate - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7553,8 +7553,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7565,13 +7565,13 @@
                 "dct:identifier": "185dist_a",
                 "dct:title": "Waldschäden durch Buchdruckerbefall - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "185dist_indicator",
                 "dct:title": "Waldschäden durch Buchdruckerbefall - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7635,8 +7635,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7647,13 +7647,13 @@
                 "dct:identifier": "187dist_a",
                 "dct:title": "Mischwaldflächen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "187dist_indicator",
                 "dct:title": "Mischwaldflächen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7758,8 +7758,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7770,13 +7770,13 @@
                 "dct:identifier": "190dist_a",
                 "dct:title": "Kronenverlichtung - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "190dist_indicator",
                 "dct:title": "Kronenverlichtung - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7840,8 +7840,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -7852,13 +7852,13 @@
                 "dct:identifier": "192dist_a",
                 "dct:title": "Importkontrolle von Holzverpackungen - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "192dist_indicator",
                 "dct:title": "Importkontrolle von Holzverpackungen - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -7952,7 +7952,7 @@
             "de": "Übrige Erträge der Forstbetriebe"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald und Holz",
@@ -8004,8 +8004,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -8016,13 +8016,13 @@
                 "dct:identifier": "196dist_a",
                 "dct:title": "Trinkwasserverbrauch - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "196dist_indicator",
                 "dct:title": "Trinkwasserverbrauch - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -8127,8 +8127,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -8139,13 +8139,13 @@
                 "dct:identifier": "199dist_a",
                 "dct:title": "Niedrigwasser - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "199dist_indicator",
                 "dct:title": "Niedrigwasser - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -8168,8 +8168,8 @@
             "schema:name": "data@bafu.admin.ch",
             "schema:email": "data@bafu.admin.ch"
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -8180,13 +8180,13 @@
                 "dct:identifier": "200dist_a",
                 "dct:title": "Mittlerer Abfluss - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "200dist_indicator",
                 "dct:title": "Mittlerer Abfluss - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/bafu/de/home/zustand/indikatoren.html/"
             }
         ]
@@ -8198,7 +8198,7 @@
             "de": "Wasserbilanz und Wasserspeicher"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -8280,7 +8280,7 @@
             "de": "Hohe Seepegelstände"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -8690,7 +8690,7 @@
             "de": "Sanierung Restwasser"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -8731,7 +8731,7 @@
             "de": "Sanierung Schwall-Sunk"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -8895,7 +8895,7 @@
             "de": "Von Spurenstoffen entlastete Abwassereinleitungen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -8936,7 +8936,7 @@
             "de": "Messstationen Wasserstand und Abfluss an Oberflächengewässern"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -8977,7 +8977,7 @@
             "de": "Messstationen Oberflächengewässerqualität NADUF/NAWA"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9018,7 +9018,7 @@
             "de": "Messstationen Grundwasserquantität NAQUA"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9059,7 +9059,7 @@
             "de": "Messstationen Grundwasserqualität NAQUA"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9100,7 +9100,7 @@
             "de": "Sanierung Fischgängigkeit (Fischabstieg)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9141,7 +9141,7 @@
             "de": "Sanierung Fischgängigkeit (Fischaufstieg)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9182,7 +9182,7 @@
             "de": "Sanierung Geschiebehaushalt Wasserkraft"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9223,7 +9223,7 @@
             "de": "Sanierung Geschiebehaushalt Nicht-Wasserkraftanlagen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9264,7 +9264,7 @@
             "de": "Revitalisierte Fliessgewässer und Seeufer"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -9305,7 +9305,7 @@
             "de": "Schluesselfragen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -9346,7 +9346,7 @@
             "de": "Uv 2411 Rl Laufkaefer"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9387,7 +9387,7 @@
             "de": "Schluesselfragen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -9428,7 +9428,7 @@
             "de": "Anhang E Excel Toolmitformularenaundbzurwirkungsaufteilung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -9469,7 +9469,7 @@
             "de": "Anhang M Beispiel En"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -9510,7 +9510,7 @@
             "de": "Excel Erhebungsformular Gastronomie"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -9551,7 +9551,7 @@
             "de": "Muster Bab Kommunale Abfallwirtschaft Hrm2 Bafu 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -9592,7 +9592,7 @@
             "de": "Kopie Von Muster Bab Kommunale Abfallwirtschaft Hrm1 Bafu 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -9633,7 +9633,7 @@
             "de": "Liste Der National Prioritären Arten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9674,7 +9674,7 @@
             "de": "Digitale Liste Der National Prioritären Lebensräume"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9715,7 +9715,7 @@
             "de": "Aueninventar Stand Und Handlungsbedarf Datentabellen 201104"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9756,7 +9756,7 @@
             "de": "Aufwertungsbedarf In Den Auen Von Nationaler Bedeutung, Datentabellen, Aktualisierung 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9797,7 +9797,7 @@
             "de": "Liste Der Waldzielarten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9838,7 +9838,7 @@
             "de": "Auswertungsstatistikderwaldzielarten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9879,7 +9879,7 @@
             "de": "National Prioritäre Arten, Revidierte Version, Stand 30 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9920,7 +9920,7 @@
             "de": "Teil Ii Uv 1709 Npa Npl Dfi Digitaleliste Lebensraeume 21 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -9961,7 +9961,7 @@
             "de": "Teil I Uv 1709 Npa Npl Dfi Digitaleliste Arten 21 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -10002,7 +10002,7 @@
             "de": "Swissprtr Daten 2007 2022"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Chemikalien",
@@ -10043,7 +10043,7 @@
             "de": "Complete List Of References"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Elektrosmog und Licht",
@@ -10084,7 +10084,7 @@
             "de": "Zwischenabrechnung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -10125,7 +10125,7 @@
             "de": "Zwischenabrechnung Projektstart Ab 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -10166,7 +10166,7 @@
             "de": "Zwischenabrechnung Utf Projektstart Ab 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -10207,7 +10207,7 @@
             "de": "Schlussabrechnung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -10248,7 +10248,7 @@
             "de": "Schlussabrechnung Utf Projektstart Ab 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -10289,7 +10289,7 @@
             "de": "Schlussabrechnung Utf Projektstart Ab 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -10330,7 +10330,7 @@
             "de": "Retired Cp1 Kyotounits"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10371,7 +10371,7 @@
             "de": "Co2 Statistik 2024 07 De"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10412,7 +10412,7 @@
             "de": "Entwicklung Thg Emissionen Seit 1990 2024 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10453,7 +10453,7 @@
             "de": "Gesuch Um Rückerstattung Der Co2 Abgabe An Betreiber Von Wkk Anlagen 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10464,8 +10464,8 @@
             "schema:name": NaN,
             "schema:email": NaN
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -10476,13 +10476,13 @@
                 "dct:identifier": "256dist_a",
                 "dct:title": "Gesuch Um Rückerstattung Der Co2 Abgabe An Betreiber Von Wkk Anlagen 2023 - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "256dist_indicator",
                 "dct:title": "Gesuch Um Rückerstattung Der Co2 Abgabe An Betreiber Von Wkk Anlagen 2023 - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/dam/bafu/de/dokumente/klima/fachinfo-daten/gesuch-rueckerstattung-co2-abgabe-betreiber-wkk-anlagen-2022.xlsx.download.xlsx/Gesuch_um_R%C3%BCckerstattung_der_CO2-Abgabe_an_Betreiber_von_WKK-Anlagen_2023.xlsx"
             }
         ]
@@ -10494,7 +10494,7 @@
             "de": "Daten Kantonale Berichterstattung Co2 Gebäude 2016 2020"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10505,8 +10505,8 @@
             "schema:name": NaN,
             "schema:email": NaN
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -10517,13 +10517,13 @@
                 "dct:identifier": "257dist_a",
                 "dct:title": "Daten Kantonale Berichterstattung Co2 Gebäude 2016 2020 - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "257dist_indicator",
                 "dct:title": "Daten Kantonale Berichterstattung Co2 Gebäude 2016 2020 - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/dam/bafu/de/dokumente/klima/fachinfo-daten/daten-kantonale-berichterstattung-co2-gebaeude-2016-2020.xlsx.download.xlsx/Daten_Kantonale_Berichterstattung_CO2_Geb%C3%A4ude_2016-2020.xlsx"
             }
         ]
@@ -10535,7 +10535,7 @@
             "de": "Pu Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme V1 240503 De"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10576,7 +10576,7 @@
             "de": "Pu Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme V1 230317 D"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10617,7 +10617,7 @@
             "de": "Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme 2022 De"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10658,7 +10658,7 @@
             "de": "Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme 2020 De"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10699,7 +10699,7 @@
             "de": "Statistik Kompensationsprojekte Ch 20240625"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10740,7 +10740,7 @@
             "de": "Monitoring Co2 Kva 2010 2022"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10781,7 +10781,7 @@
             "de": "Template Für Immobilien Und Hypothekenportfolios Für Den Pacta Klimatest 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10822,7 +10822,7 @@
             "de": "Eig 2019 11 18 Annex Ii Tracking Progress Tables"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10863,7 +10863,7 @@
             "de": "Bak Dena Schlussbericht Ccs Kostenschätzung Anhang Final"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10904,7 +10904,7 @@
             "de": "Pu Liste Zugelassene Prüfstellen 20220704 D F I"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -10945,7 +10945,7 @@
             "de": "Glassammelstellen Beurteilung Anhang 6"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -10986,7 +10986,7 @@
             "de": "Ergebnistableaus Beurteilungsmethode T30"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Lärm",
@@ -11027,7 +11027,7 @@
             "de": "Ãœbersicht Kva AperÃ§u Uiom 1904 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -11068,7 +11068,7 @@
             "de": "Abschätzung N Belastung Durch Ställe Final 13 04 16"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -11109,7 +11109,7 @@
             "de": "Partikelfiltersystem Typen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -11150,7 +11150,7 @@
             "de": "Motoren Typen Oem"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -11191,7 +11191,7 @@
             "de": "Schluesselfragen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -11232,7 +11232,7 @@
             "de": "Zahlungsantrag"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -11273,7 +11273,7 @@
             "de": "Zahlungsantrag Mitbelegliste"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -11314,7 +11314,7 @@
             "de": "Liste Der Bewerteten Waldrelevanten Schadorganismen (Anhang 1)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -11355,7 +11355,7 @@
             "de": "Politische Vorstoesseimbereichwaldundholzab2014"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -11396,7 +11396,7 @@
             "de": "Aph21 26 Beitragsgesuch Finanzen V2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -11437,7 +11437,7 @@
             "de": "Laufende Und Abgeschlossene Projekte 2000 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -11478,7 +11478,7 @@
             "de": "Mitteilung Ik F 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -11519,7 +11519,7 @@
             "de": "Tabelle Wasserhaushalt Schweiz 2023 De"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11560,7 +11560,7 @@
             "de": "Tabelle Substanzen Nawa18"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11601,7 +11601,7 @@
             "de": "Naqua Pfas Tfa Grundwasser 2021 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11642,7 +11642,7 @@
             "de": "Tfa Psm 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11683,7 +11683,7 @@
             "de": "Renaturierung Der Schweizer GewÃ¤sser Stand Ã–kologische Sanierung Wasserkraft 2022 (Bafu 2024) Anhang"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11724,7 +11724,7 @@
             "de": "Kt Procode Erhebung Set1 1 06"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11765,7 +11765,7 @@
             "de": "Kt Procode Erhebung Set2 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11806,7 +11806,7 @@
             "de": "Kt Procode Erhebung Set3 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11847,7 +11847,7 @@
             "de": "Kt Procode Erhebung Set4 1 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11888,7 +11888,7 @@
             "de": "Kt Procode Erhebung Set6 2 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11929,7 +11929,7 @@
             "de": "Kt Procode Erhebung Set7 1 05"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -11970,7 +11970,7 @@
             "de": "Kt Procode Erhebung Set8 2 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12011,7 +12011,7 @@
             "de": "Kt Procode Erhebung Set9 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12052,7 +12052,7 @@
             "de": "Kt Procode Erhebung Set10 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12093,7 +12093,7 @@
             "de": "Auswertung Set1 Set8 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12134,7 +12134,7 @@
             "de": "Datenmodell Gis 1 03"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12175,7 +12175,7 @@
             "de": "Jeu6 Formulaire Cq E P T 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12216,7 +12216,7 @@
             "de": "Ufervegetation Ind 8 1 Empfehlung Beispiele 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12257,7 +12257,7 @@
             "de": "Etat Des Connaissances Suivi Dévalaison 2024 Tableau De Synthese"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12298,7 +12298,7 @@
             "de": "210630 Restwassersanierung Nach Art 80 Ff Gschg Stand Ende 2020 Und Entwicklung Seit Ende 2018 (Bafu, 2021) Auswertungsmatrix"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12339,7 +12339,7 @@
             "de": "Kraftwerke Mit Konzession Ab 1992, Welche Von Den Restwasserverordnungen Vom 30 September 2022 Betro"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12380,7 +12380,7 @@
             "de": "Fischwanderung Erfassungswerkzeug"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12421,7 +12421,7 @@
             "de": "Aueninventar Stand Und Handlungsbedarf Datentabellen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -12462,7 +12462,7 @@
             "de": "Vorlagedatei Kt Ag 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12503,7 +12503,7 @@
             "de": "Vorlagedatei Kt Ai 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12544,7 +12544,7 @@
             "de": "Vorlagedatei Kt Ar 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12585,7 +12585,7 @@
             "de": "Vorlagedatei Kt Be 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12626,7 +12626,7 @@
             "de": "Vorlagedatei Kt Bl 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12667,7 +12667,7 @@
             "de": "Vorlagedatei Kt Bs 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12708,7 +12708,7 @@
             "de": "Vorlagedatei Kt Fr 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12749,7 +12749,7 @@
             "de": "Vorlagedatei Kt Ge 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12790,7 +12790,7 @@
             "de": "Vorlagedatei Kt Gl 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12831,7 +12831,7 @@
             "de": "Vorlagedatei Kt Gr 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12872,7 +12872,7 @@
             "de": "Vorlagedatei Kt Ju 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12913,7 +12913,7 @@
             "de": "Vorlagedatei Kt Lu 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12954,7 +12954,7 @@
             "de": "Vorlagedatei Kt Ne 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -12995,7 +12995,7 @@
             "de": "Vorlagedatei Kt Nw 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13036,7 +13036,7 @@
             "de": "Vorlagedatei Kt Ow 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13077,7 +13077,7 @@
             "de": "Vorlagedatei Kt Sg 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13118,7 +13118,7 @@
             "de": "Vorlagedatei Kt Sh 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13159,7 +13159,7 @@
             "de": "Vorlagedatei Kt So 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13200,7 +13200,7 @@
             "de": "Vorlagedatei Kt Sz 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13241,7 +13241,7 @@
             "de": "Vorlagedatei Kt Tg 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13282,7 +13282,7 @@
             "de": "Vorlagedatei Kt Ti 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13323,7 +13323,7 @@
             "de": "Vorlagedatei Kt Ur 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13364,7 +13364,7 @@
             "de": "Vorlagedatei Kt Vd 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13405,7 +13405,7 @@
             "de": "Vorlagedatei Kt Vs 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13446,7 +13446,7 @@
             "de": "Vorlagedatei Kt Zg 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13487,7 +13487,7 @@
             "de": "Vorlagedatei Kt Zh 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13528,7 +13528,7 @@
             "de": "Sms Liste"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13569,7 +13569,7 @@
             "de": "Stationsliste Hydrowebsam De Juli2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13610,7 +13610,7 @@
             "de": "Stationsliste Hydrowebsam Ohne Digitale Daten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13651,7 +13651,7 @@
             "de": "Auswertungen Zumgewaessernetz"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13692,7 +13692,7 @@
             "de": "Meldeformular Geschiebe"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13733,7 +13733,7 @@
             "de": "Messstellen Stations De Mesure Nawa Trend"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13774,7 +13774,7 @@
             "de": "Tabelle Frsv"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biotechnologie",
@@ -13815,7 +13815,7 @@
             "de": "Hochwasserspitzen Flüsse Sommer2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13856,7 +13856,7 @@
             "de": "Hochwasserspitzen Seen Sommer2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13897,7 +13897,7 @@
             "de": "Vergleichhochwasserspitzen Ezgrhone"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -13938,7 +13938,7 @@
             "de": "Uv 1807 D Anhang Ausmassabschätzung Explosivstoffe V1 0 Pw1953"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Störfallvorsorge",
@@ -13949,8 +13949,8 @@
             "schema:name": NaN,
             "schema:email": NaN
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -13961,13 +13961,13 @@
                 "dct:identifier": "341dist_a",
                 "dct:title": "Uv 1807 D Anhang Ausmassabschätzung Explosivstoffe V1 0 Pw1953 - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "341dist_indicator",
                 "dct:title": "Uv 1807 D Anhang Ausmassabschätzung Explosivstoffe V1 0 Pw1953 - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/dam/bafu/de/dokumente/stoerfallvorsorge/uv-umwelt-vollzug/UV-1807-D_Anhang_Ausmassabsch%C3%A4tzung-Explosivstoffe_V1.0_PW1953.xlsx.download.xlsx/UV-1807-D_Anhang_Ausmassabsch%C3%A4tzung-Explosivstoffe_V1.0_PW1953.xlsx"
             }
         ]
@@ -13979,7 +13979,7 @@
             "de": "Ausmassabschaetzung Has Stfv"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Störfallvorsorge",
@@ -14020,7 +14020,7 @@
             "de": "230101 Ubp2021 Lu Glo Reg Sinum"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -14061,7 +14061,7 @@
             "de": "Uw 2121 Ubp A06 Landnutzung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -14102,7 +14102,7 @@
             "de": "Uw 2121 Ubp Wasserknappheit Moeksub National Factors"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -14143,7 +14143,7 @@
             "de": "Ã–kofaktoren Marine Fischressourcen 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -14184,7 +14184,7 @@
             "de": "Uv 2402 Rl Bienen Red List Dfi"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14225,7 +14225,7 @@
             "de": "2022 Gewässer In Der Schweiz Anhang"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -14266,7 +14266,7 @@
             "de": "Ãœbersicht Kva AperÃ§u Uiom 1904 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -14307,7 +14307,7 @@
             "de": "Abschätzung N Belastung Durch Ställe Final 13 04 16"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -14348,7 +14348,7 @@
             "de": "Types De Systemesdefiltresaparticules"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -14389,7 +14389,7 @@
             "de": "Types De Moteursoem"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -14430,7 +14430,7 @@
             "de": "Liste Especes Forestierescibles"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14471,7 +14471,7 @@
             "de": "Analyse Especes Forestierescibles"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14512,7 +14512,7 @@
             "de": "Liste Des Espèces Prioritaires Au Niveau National"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14553,7 +14553,7 @@
             "de": "National Prioritäre Arten, Revidierte Version, Stand 30 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14594,7 +14594,7 @@
             "de": "Teil Ii Uv 1709 Npa Npl Dfi Digitaleliste Lebensraeume 21 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14635,7 +14635,7 @@
             "de": "Teil I Uv 1709 Npa Npl Dfi Digitaleliste Arten 21 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14676,7 +14676,7 @@
             "de": "Aueninventar Stand Und Handlungsbedarf Datentabellen 201104"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14717,7 +14717,7 @@
             "de": "Aufwertungsbedarf In Den Auen Von Nationaler Bedeutung, Datentabellen, Aktualisierung 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14758,7 +14758,7 @@
             "de": "Liste Numérique Des Milieux Naturels Prioritaires Au Niveau National"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -14799,7 +14799,7 @@
             "de": "Retired Cp1 Kyotounits"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -14840,7 +14840,7 @@
             "de": "Co2 Statistik 2024 07 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -14881,7 +14881,7 @@
             "de": "Evolution Emissions Ges Depuis 1990 2024 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -14922,7 +14922,7 @@
             "de": "Demande De Remboursement De La Taxe Sur Le Co2 Aux Exploitants D'Installations Ccf 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -14963,7 +14963,7 @@
             "de": "Données Rapport Cantonaux Co2 Bâtiments 2016 2020"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -14974,8 +14974,8 @@
             "schema:name": NaN,
             "schema:email": NaN
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -14986,13 +14986,13 @@
                 "dct:identifier": "366dist_a",
                 "dct:title": "Données Rapport Cantonaux Co2 Bâtiments 2016 2020 - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "366dist_indicator",
                 "dct:title": "Données Rapport Cantonaux Co2 Bâtiments 2016 2020 - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/dam/bafu/fr/dokumente/klima/fachinfo-daten/daten-kantonale-berichterstattung-co2-gebaeude-2016-2020.xlsx.download.xlsx/Donn%C3%A9es_rapport_cantonaux_CO2_b%C3%A2timents_2016-2020.xlsx"
             }
         ]
@@ -15004,7 +15004,7 @@
             "de": "Pu Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme V1 240503 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15045,7 +15045,7 @@
             "de": "Pu Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme V1 230317 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15086,7 +15086,7 @@
             "de": "Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme 2022 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15127,7 +15127,7 @@
             "de": "Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme 2020 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15168,7 +15168,7 @@
             "de": "Statistik Kompensationsprojekte Ch 20240625 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15209,7 +15209,7 @@
             "de": "Template Pour Les Portefeuilles Immobiliers Et Hypothèques Pour Le Test Climatique Pacta 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15250,7 +15250,7 @@
             "de": "Eig 2019 11 18 Annex Ii Tracking Progress Tables"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15291,7 +15291,7 @@
             "de": "Pu Liste Zugelassene Prüfstellen 20220704 D F I"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -15332,7 +15332,7 @@
             "de": "Questions Clés"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -15373,7 +15373,7 @@
             "de": "Demande De Paiement"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -15414,7 +15414,7 @@
             "de": "Demande De Paiementaveclistedesjustificatifs"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -15455,7 +15455,7 @@
             "de": "Excel Erhebungsformular Gastronomie"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -15496,7 +15496,7 @@
             "de": "Modèle Décompte Gestion Communale Déchets Mch2 Ofev 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -15537,7 +15537,7 @@
             "de": "Modèle Décompte Gestion Communale Déchets Mch1 Ofev 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -15578,7 +15578,7 @@
             "de": "Tabelle Wasserhaushalt Schweiz 2023 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15619,7 +15619,7 @@
             "de": "Tabelle Substanzen Nawa18"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15660,7 +15660,7 @@
             "de": "Renaturation Des Eaux Suisses Ã‰tat De Lâ€™Assainissement Ã‰cologique De La Force Hydraulique 2022 (Ofev 2024) Annexe"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15701,7 +15701,7 @@
             "de": "Ct Codepro Releve Jeu1 1 06"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15742,7 +15742,7 @@
             "de": "Ct Codepro Releve Jeu2 1 02 Xls"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15783,7 +15783,7 @@
             "de": "Ct Codepro Releve Jeu3 1 01 Xls"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15824,7 +15824,7 @@
             "de": "Ct Codepro Releve Jeu4 1 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15865,7 +15865,7 @@
             "de": "Ct Codepro Releve Jeu6 Ept 2 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15906,7 +15906,7 @@
             "de": "Ct Codepro Releve Jeu7 1 05"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15947,7 +15947,7 @@
             "de": "Ct Codepro Releve Jeu8 2 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -15988,7 +15988,7 @@
             "de": "Ct Codepro Releve Jeu9 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16029,7 +16029,7 @@
             "de": "Ct Codepro Releve Jeu10 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16070,7 +16070,7 @@
             "de": "Evaluation Jeu1 Jeu8 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16111,7 +16111,7 @@
             "de": "Modele Donnees Sig 1 03"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16152,7 +16152,7 @@
             "de": "Jeu6 Formulaire Cq E P T 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16193,7 +16193,7 @@
             "de": "Végriv Ind 8 1 Recommandation Exemples 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16204,8 +16204,8 @@
             "schema:name": NaN,
             "schema:email": NaN
         },
-        "dct:issued": NaN,
-        "dct:modified": NaN,
+        "dct:issued": "2025-07-23",
+        "dct:modified": "2025-07-23",
         "accrualPeriodicity": "YEARLY",
         "dct:temporal": {
             "dcat:start_date": "1970-01-01",
@@ -16216,13 +16216,13 @@
                 "dct:identifier": "396dist_a",
                 "dct:title": "Végriv Ind 8 1 Recommandation Exemples 1 02 - Fake Distribution",
                 "dct:format": "JSON",
-                "dct:modified": NaN
+                "dct:modified": "2025-07-23"
             },
             {
                 "dct:identifier": "396dist_indicator",
                 "dct:title": "Végriv Ind 8 1 Recommandation Exemples 1 02 - Indikator",
                 "dct:format": "CSV",
-                "dct:modified": NaN,
+                "dct:modified": "2025-07-23",
                 "dcat:accessURL": "https://www.bafu.admin.ch/dam/bafu/fr/dokumente/wasser/fachinfo-daten/wirkungskontrolle-revitalisierung/ufervegetation-artenliste_20191219.xlsx.download.xlsx/V%C3%A9gRiv_Ind.8.1_Recommandation_Exemples_1_02.xlsx"
             }
         ]
@@ -16234,7 +16234,7 @@
             "de": "210630 Assainissement Des DÃ©bits RÃ©siduels Selon Les Art 80 Ss Leaux Ã‰tat Ã€ Fin 2020 Et Ã‰volution Depuis Fin 2018 (Ofev, 2021) Matrice Dâ€™Ã‰valuation"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16275,7 +16275,7 @@
             "de": "Kraftwerke Mit Konzession Ab 1992, Welche Von Den Restwasserverordnungen Vom 30 September 2022 Betro"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16316,7 +16316,7 @@
             "de": "Fischwanderung Erfassungswerkzeug"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16357,7 +16357,7 @@
             "de": "Stationsliste Hydrowebsam Fr Juillet2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16398,7 +16398,7 @@
             "de": "Stationsliste Hydrowebsam Ohne Digitale Daten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16439,7 +16439,7 @@
             "de": "Analyses Du Reseauhydrographique"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16480,7 +16480,7 @@
             "de": "Questionnaire Charriage"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16521,7 +16521,7 @@
             "de": "Messstellen Stations De Mesure Nawa Trend"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -16562,7 +16562,7 @@
             "de": "Liste Des Organismes Nuisibles Potentiellement Dangereux Pour La ForÃªt Ã‰valuÃ©s (Annexe 1)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -16603,7 +16603,7 @@
             "de": "Interventions Politiquesauniveaunationaldansledomainedesforets"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -16644,7 +16644,7 @@
             "de": "Pab21 26 Demande D'Aide Financiere Finances V2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -16685,7 +16685,7 @@
             "de": "Projekts En Cours Et Terminés 2000 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -16726,7 +16726,7 @@
             "de": "Communication Ci F 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -16767,7 +16767,7 @@
             "de": "Rapport Financier Intermédiaire"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -16808,7 +16808,7 @@
             "de": "Rapport Financier IntermÃ©diaire DÃ©marrage Du Projet Ã€ Partir De 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -16849,7 +16849,7 @@
             "de": "Rapport Financier IntermÃ©diaire DÃ©marrage Du Projet Ã€ Partir De 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -16890,7 +16890,7 @@
             "de": "Rapport Financier Final"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -16931,7 +16931,7 @@
             "de": "Rapport Financier Final DÃ©marrage Du Projet Ã€ Partir De 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -16972,7 +16972,7 @@
             "de": "Rapport Financier Final DÃ©marrage Du Projet Ã€ Partir De 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -17013,7 +17013,7 @@
             "de": "Swissprtr Daten 2007 2022"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Chemikalien",
@@ -17054,7 +17054,7 @@
             "de": "2022 Eaux Suisses Annexe"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17095,7 +17095,7 @@
             "de": "Tabelle Wasserhaushallt Schweiz 2023 It"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17136,7 +17136,7 @@
             "de": "Rinaturazione Delle Acque Svizzere Stato Del Risanamento Ecologico Della Forza Idrica 2022 (Ufam 2024) Allegato"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17177,7 +17177,7 @@
             "de": "Ct Codicepro Rilievo Set1 1 06"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17218,7 +17218,7 @@
             "de": "Ct Codicepro Rilievo Set2 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17259,7 +17259,7 @@
             "de": "Ct Codicepro Rilievo Set3 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17300,7 +17300,7 @@
             "de": "Ct Codicepro Rilievo Set4 1 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17341,7 +17341,7 @@
             "de": "Ct Codicepro Rilievo Set6 1 05"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17382,7 +17382,7 @@
             "de": "Ct Codicepro Rilievo Set7 1 05"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17423,7 +17423,7 @@
             "de": "Ct Codicepro Rilievo Set8 2 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17464,7 +17464,7 @@
             "de": "Ct Codicepro Rilievo Set9 1 02"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17505,7 +17505,7 @@
             "de": "Ct Codicepro Rilievo Set10 1 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17546,7 +17546,7 @@
             "de": "Fischwanderung Erfassungswerkzeug"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17587,7 +17587,7 @@
             "de": "Rilevamento Degliabitantiallacciati"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17628,7 +17628,7 @@
             "de": "Stationsliste Hydrowebsam It Luglio2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17669,7 +17669,7 @@
             "de": "Stationsliste Hydrowebsam Ohne Digitale Daten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17710,7 +17710,7 @@
             "de": "Analisi Della Reteidrografica"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17751,7 +17751,7 @@
             "de": "Registrazione Trasportodifondo"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17792,7 +17792,7 @@
             "de": "Messstellen Stations De Mesure Nawa Trend"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -17833,7 +17833,7 @@
             "de": "Ãœbersicht Kva AperÃ§u Uiom 1904 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -17874,7 +17874,7 @@
             "de": "Tipi Di Sistemi Difiltriantiparticolato"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -17915,7 +17915,7 @@
             "de": "Tipi Di Motore Oem"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -17956,7 +17956,7 @@
             "de": "Liste Der Waldzielarten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -17997,7 +17997,7 @@
             "de": "Auswertungsstatistikderwaldzielarten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -18038,7 +18038,7 @@
             "de": "Liste Der National Prioritären Arten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -18079,7 +18079,7 @@
             "de": "Aueninventar Stand Und Handlungsbedarf Datentabellen 201104"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -18120,7 +18120,7 @@
             "de": "Aufwertungsbedarf In Den Auen Von Nationaler Bedeutung, Datentabellen, Aktualisierung 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -18161,7 +18161,7 @@
             "de": "Lista Digitale Delle Degli Ambienti Prioritari A Livello Nazionale"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -18202,7 +18202,7 @@
             "de": "National Prioritäre Arten, Revidierte Version, Stand 30 06 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biodiversität",
@@ -18243,7 +18243,7 @@
             "de": "Liste Der Bewerteten Waldrelevanten Schadorganismen (Anhang 1)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -18284,7 +18284,7 @@
             "de": "Politische Vorstoesseimbereichwaldundholzab2014"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -18325,7 +18325,7 @@
             "de": "Pal21 26 Domanda Di Contributi Finanze V2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -18366,7 +18366,7 @@
             "de": "Progetti In Corso E Completati 2000 â€“ 2024"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -18407,7 +18407,7 @@
             "de": "Comunicazione Ci F 01"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald & Holz",
@@ -18448,7 +18448,7 @@
             "de": "Retired Cp1 Kyotounits"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18489,7 +18489,7 @@
             "de": "Co2 Statistik 2024 07 Fr"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18530,7 +18530,7 @@
             "de": "Evoluzione Gas Serra Dal 1990 2024 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18571,7 +18571,7 @@
             "de": "Domanda Di Restituzione Della Tassa Sul Co2 Ai Gestori Di Impianti Di Cogenerazione 2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18612,7 +18612,7 @@
             "de": "Pu Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme V1 240503 It"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18653,7 +18653,7 @@
             "de": "Pu Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme V1 230317 It"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18694,7 +18694,7 @@
             "de": "Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme 2022 It"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18735,7 +18735,7 @@
             "de": "Excel Tool Vereinfachter Nachweis Zusaetzlichkeit Fernwaerme 2020 It"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18776,7 +18776,7 @@
             "de": "Statistik Kompensationsprojekte Ch 20240625 It"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18817,7 +18817,7 @@
             "de": "Eig 2019 11 18 Annex Ii Tracking Progress Tables"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -18858,7 +18858,7 @@
             "de": "Swissprtr Daten 2007 2022"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Chemikalien",
@@ -18899,7 +18899,7 @@
             "de": "Conteggio Intermedio"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -18940,7 +18940,7 @@
             "de": "Rapport Financier IntermÃ©diaire DÃ©marrage Du Projet Ã€ Partir De 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -18981,7 +18981,7 @@
             "de": "Conteggio Intermedio Inizio Del Progetto A Partire Da 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -19022,7 +19022,7 @@
             "de": "Conteggio Finale"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -19063,7 +19063,7 @@
             "de": "Conteggio Finale Inizio Del Progetto A Partire Da 2019"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -19104,7 +19104,7 @@
             "de": "Conteggio Finale Inizio Del Progetto A Partire Da 2021"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -19145,7 +19145,7 @@
             "de": "Richiesta Di Versamento"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -19186,7 +19186,7 @@
             "de": "Richiesta Di Versamentoconlistadeigiustificativi"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -19227,7 +19227,7 @@
             "de": "Excel Erhebungsformular Gastronomie"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wirtschaft und Konsum",
@@ -19268,7 +19268,7 @@
             "de": "Muster Bab Kommunale Abfallwirtschaft Hrm2 Bafu 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -19309,7 +19309,7 @@
             "de": "Kopie Von Muster Bab Kommunale Abfallwirtschaft Hrm1 Bafu 2018"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -19350,7 +19350,7 @@
             "de": "Particle Filter Systemtypes"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -19391,7 +19391,7 @@
             "de": "Engine Types Oem"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -19432,7 +19432,7 @@
             "de": "Swissprtr Daten 2007 2022"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Chemikalien",
@@ -19473,7 +19473,7 @@
             "de": "Retired Cp1 Kyotounits"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19514,7 +19514,7 @@
             "de": "Co2 Statistik 2024 07 De"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19555,7 +19555,7 @@
             "de": "Evolution Ghg Since 1990 2024 04"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19596,7 +19596,7 @@
             "de": "Eig 2019 11 18 Annex Ii Tracking Progress Tables"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19637,7 +19637,7 @@
             "de": "Agroscope 2023B"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19678,7 +19678,7 @@
             "de": "Agroscope 2024A"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19719,7 +19719,7 @@
             "de": "Che Br Ctf 2022 V1 0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19760,7 +19760,7 @@
             "de": "Tup Report Switzerland Addendum Retired Units"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19801,7 +19801,7 @@
             "de": "Add 1 List Of Carryoverunitsswitzerland"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19842,7 +19842,7 @@
             "de": "Add 2 List Of Retiredcp1Unitsswitzerland"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -19883,7 +19883,7 @@
             "de": "Zwischenabrechnung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -19924,7 +19924,7 @@
             "de": "Schlussabrechnung Utf"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "innovation",
@@ -19965,7 +19965,7 @@
             "de": "Tabelle Wasserhaushalt Schweiz 2023 En"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20006,7 +20006,7 @@
             "de": "Stationsliste Hydrowebsam En July2023"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20047,7 +20047,7 @@
             "de": "Stationsliste Hydrowebsam Ohne Digitale Daten"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20088,7 +20088,7 @@
             "de": "Network Analyses"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20129,7 +20129,7 @@
             "de": "Meldeformular Geschiebe"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20170,7 +20170,7 @@
             "de": "Messstellen Stations De Mesure Nawa Trend"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20211,7 +20211,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq3"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20252,7 +20252,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq4"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20293,7 +20293,7 @@
             "de": "Ws037 Phosphorgehalt 20211209 Bafuindikatordatenblatt1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -20334,7 +20334,7 @@
             "de": "Bt040 Anwesenheitgvo 20240108 Bafuindikatordatenblatt1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biotechnologie",
@@ -20375,7 +20375,7 @@
             "de": "Bt040 Anwesenheitgvo 20240108 Bafuindikatordatenblatt2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biotechnologie",
@@ -20416,7 +20416,7 @@
             "de": "Kl001 Co2Emissionenbrenntreib 20240709 Bafuindikatordatenblatt1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -20457,7 +20457,7 @@
             "de": "Kl077 Hitzebedingtetodesfälle1980 2023 20240718 Bafuindikatordatenblatt1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Klima",
@@ -20498,7 +20498,7 @@
             "de": "Daten Hw Mg Ru St Bis 1945 (Mit Kommentaren)"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Naturgefahren",
@@ -20539,7 +20539,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq3"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20580,7 +20580,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq4"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20621,7 +20621,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq3"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20662,7 +20662,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq4"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20703,7 +20703,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq3"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20744,7 +20744,7 @@
             "de": "Ljl0V4Cg9Ydd9Jagfydenvbmzpz3Vyyxrpb25Jzd04Odq4"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Luft",
@@ -20785,7 +20785,7 @@
             "de": "Geodatenmodell Messorte"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "BAFU",
@@ -20826,7 +20826,7 @@
             "de": "Geodatenmodell Abfallanlagen und Materialentnahmestellen V1.2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Abfall",
@@ -20867,7 +20867,7 @@
             "de": "Geodatenmodell Kataster der belasteten Standorte V1.5"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Altlasten",
@@ -21646,7 +21646,7 @@
             "de": "Geodatenmodell Register über die bewilligten Freisetzungsversuche nach Freisetzungsverordnung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Biotechnologie",
@@ -21687,7 +21687,7 @@
             "de": "Geodatenmodell Ergebnisse Nationale Beobachtung Bodenbelastung  und Ergebnisse Kantonale Überwachung Bodenbelastung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Boden",
@@ -21728,7 +21728,7 @@
             "de": "Geodatenmodell SwissPRTR"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Chemikalien",
@@ -22630,7 +22630,7 @@
             "de": "Geodatenmodell Holznutzungsbewilligung V1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22671,7 +22671,7 @@
             "de": "Geodatenmodell Rodungen und Rodungsersatz V1.1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22712,7 +22712,7 @@
             "de": "Geodatenmodell Forstliche Planung: Waldfunktion - Schutzwald"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22753,7 +22753,7 @@
             "de": "Geodatenmodell Langfristige Waldökosystem-Forschung LWF"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22794,7 +22794,7 @@
             "de": "Geodatenmodell Sanasilva‐Inventuren"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22835,7 +22835,7 @@
             "de": "Geodatenmodell Schweizerisches Landesforstinventar LFI"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22876,7 +22876,7 @@
             "de": "Geodatenmodell Vegetationshöhenmodell LFI V1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22917,7 +22917,7 @@
             "de": "Geodatenmodell Reliefschattierung zum Vegetationshöhenmodell LFI V1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22958,7 +22958,7 @@
             "de": "Geodatenmodell Waldmischungsgrad LFI V1.1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wald",
@@ -22999,7 +22999,7 @@
             "de": "Geodatenmodell Inventar Trinkwasserversorgung in Mangellagen V2.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23040,7 +23040,7 @@
             "de": "Geodatenmodell Grundwasseraustritte, -fassungen, -anreicherungsanlagen V2.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23081,7 +23081,7 @@
             "de": "Geodatenmodell Kläranlagendatenbank , Regionale Entwässerungsplanung  V1.2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23122,7 +23122,7 @@
             "de": "Geodatenmodell Planung der Revitalisierungen von Seeufern, V1.2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23163,7 +23163,7 @@
             "de": "Geodatenmodell Fliessgewässertypisierung der Schweiz"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23204,7 +23204,7 @@
             "de": "Geodatenmodell Basisklassen für Oberflächengewässer V1.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23245,7 +23245,7 @@
             "de": "Geodatenmodell Basisklassen für Oberflächengewässer V1.1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23286,7 +23286,7 @@
             "de": "Geodatenmodell Geschiebemessnetz SOLID"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23327,7 +23327,7 @@
             "de": "Geodatenmodell Gewässerraum V1.1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23368,7 +23368,7 @@
             "de": "Geodatenmodell Gewässerzustand"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23409,7 +23409,7 @@
             "de": "Geodatenmodell Grundwasseraustritte, -fassungen, -anreicherungsanlagen V1.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23450,7 +23450,7 @@
             "de": "Geodatenmodell Grundwasservorkommen V2.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23491,7 +23491,7 @@
             "de": "Geodatenmodell Inventar der bestehenden Wasserentnahmen"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23532,7 +23532,7 @@
             "de": "Geodatenmodell Inventar Trinkwasserversorgung in Notlagen V1.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23573,7 +23573,7 @@
             "de": "Geodatenmodell Kommunale Entwässerungsplanung"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23614,7 +23614,7 @@
             "de": "Geodatenmodell Planerischer Gewässerschutz V1.2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23655,7 +23655,7 @@
             "de": "Geodatenmodell Planung der Revitalisierungen von Fliessgewässern V1.2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23696,7 +23696,7 @@
             "de": "Geodatenmodell Planung und Berichterstattung der Sanierung Wasserkraft V1.2"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23737,7 +23737,7 @@
             "de": "Geodatenmodell Nationale Beobachtung Oberflächengewässerqualität"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23778,7 +23778,7 @@
             "de": "Geodatenmodell Kantonale Erhebungen Gewässerzustand"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23819,7 +23819,7 @@
             "de": "Geodatenmodell Hydrogeologische Karte der Schweiz 1:100'000, V1.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23860,7 +23860,7 @@
             "de": "Geodatenmodell Topographische Einzugsgebiete Schweizer Gewässer"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23901,7 +23901,7 @@
             "de": "Geodatenmodell Nationales Messnetz zur Erhebung der Grundwasser-Quantität, V1.0"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23942,7 +23942,7 @@
             "de": "Geodatenmodell Geschiebemessnetz SOLID"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -23983,7 +23983,7 @@
             "de": "Geodatenmodell Kantonale Hydrologische Messnetze"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -24024,7 +24024,7 @@
             "de": "Geodatenmodell Messnetze zur Erhebung der Grundwasser-Qualität"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -24065,7 +24065,7 @@
             "de": "Geodatenmodell Nationales Messnetz zur Erhebung der Wasserisotope"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
@@ -24106,7 +24106,7 @@
             "de": "Geodatenmodell Hydrologische Messnetze, V1.1"
         },
         "dct:description": {
-            "de": NaN
+            "de": ""
         },
         "dcat:theme": "environment",
         "dcat:keyword": "Wasser",
