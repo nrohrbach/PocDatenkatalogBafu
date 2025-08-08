@@ -64,7 +64,7 @@ def map_options(option):
       'Landschaft'  : 'landschaft',
       'Lärm'  : 'laerm',
       'Luft'  : 'luft',
-      'Naturgefahren'  : 'naturgefahr',
+      'Naturgefahren'  : 'naturgefahren',
       'Recht'  : 'recht',
       'Störfallvorsorge'  : 'storfallvorsorge',
       'Umweltverträglichkeitsprüfung'  : 'umweltvertraeglichkeitpruefung',
